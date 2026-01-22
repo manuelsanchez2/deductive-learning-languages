@@ -18,6 +18,13 @@ export const languageCatalog = {
           'Estic a casa.',
           'Avui estic tranquil.'
         ],
+        translations: [
+          'Estoy cansado.',
+          'Estoy cansado.',
+          'Soy profesor.',
+          'Estoy en casa.',
+          'Hoy estoy tranquilo.'
+        ],
         challenges: [
           '¿En qué contextos usarías "sóc" frente a "estic" al hablar de ti?',
           '¿Qué diferencia percibes entre un estado momentáneo y un rasgo estable?',
@@ -46,6 +53,11 @@ export const languageCatalog = {
           'Aquest llibre és meu.',
           'És la casa d’en Marc.'
         ],
+        translations: [
+          'Mi libro está aquí.',
+          'Este libro es mío.',
+          'Es la casa de Marc.'
+        ],
         challenges: [
           '¿Qué diferencia notas entre "el meu" y "meu"?',
           '¿Por qué aparece un artículo delante del posesivo?',
@@ -70,6 +82,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Pasado perifrástico',
         input: ['Ahir vaig anar al cinema.', 'Vam parlar molt.'],
+        translations: ['Ayer fui al cine.', 'Hablamos mucho.'],
         challenges: [
           '¿Qué verbo acompaña al infinitivo para formar el pasado?',
           '¿Qué impresión de ritmo narrativo te da esta forma?',
@@ -92,6 +105,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Pronombres débiles (duplicación)',
         input: ['El llibre? El tinc aquí.', 'A la Maria? Li vaig parlar.'],
+        translations: ['¿El libro? Lo tengo aquí.', '¿A María? Le hablé.'],
         challenges: [
           '¿Por qué aparece un pronombre aunque ya esté el objeto?',
           '¿En qué casos es obligatoria la duplicación?',
@@ -113,6 +127,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Pronombres combinados',
         input: ['Me’l vaig comprar ahir.'],
+        translations: ['Me lo compré ayer.'],
         challenges: [
           '¿Qué orden siguen los clíticos en catalán?',
           '¿Qué parte de la frase indica el objeto directo?',
@@ -133,6 +148,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Movimiento y dirección',
         input: ['Vinc demà.', 'Vaig cap a casa.'],
+        translations: ['Vengo mañana.', 'Voy hacia casa.'],
         challenges: [
           '¿Qué perspectiva introduce "venir" respecto al hablante?',
           '¿Cómo interpretarías "cap a" frente a un destino cerrado?',
@@ -154,6 +170,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Existencia: hi ha / hi és',
         input: ['Hi ha gent.', 'El problema hi és.'],
+        translations: ['Hay gente.', 'El problema está allí.'],
         challenges: [
           '¿Cuándo usarías "hi ha" frente a "hi és"?',
           '¿Qué diferencia hay entre existencia y localización?',
@@ -174,6 +191,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Gustar',
         input: ['M’agrada el cafè.', 'No li agraden les pel·lícules llargues.'],
+        translations: ['Me gusta el café.', 'No le gustan las películas largas.'],
         challenges: [
           '¿Quién es el sujeto real en estas frases?',
           '¿Por qué el pronombre es obligatorio?',
@@ -195,6 +213,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Subjuntivo vivo',
         input: ['Vull que vinguis.'],
+        translations: ['Quiero que vengas.'],
         challenges: [
           '¿Qué forma verbal sigue a "vull que"?',
           '¿Por qué se usa subjuntivo aquí?',
@@ -216,6 +235,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Conectores',
         input: ['Tot i que plovia, vam sortir.'],
+        translations: ['Aunque llovía, salimos.'],
         challenges: [
           '¿Qué matiz aporta "tot i que"?',
           '¿Qué relación lógica marca el conector?',
@@ -237,6 +257,7 @@ export const languageCatalog = {
         block: 'Bloque I — Fundamentos',
         title: 'Catalán idiomático',
         input: ['No cal que vinguis.', 'Em fa cosa.'],
+        translations: ['No hace falta que vengas.', 'Me da cosa.'],
         challenges: [
           '¿Qué perífrasis modal aparece en "no cal"?',
           '¿Qué implica "em fa cosa" en contexto?',
@@ -257,6 +278,7 @@ export const languageCatalog = {
         block: 'Bloque III — A1–A2 esenciales',
         title: 'Rutinas diarias',
         input: ['Em llevo a les set.', 'Treballo tot el dia.'],
+        translations: ['Me levanto a las siete.', 'Trabajo todo el día.'],
         challenges: [
           '¿Qué patrón siguen los reflexivos con el presente habitual?',
           '¿Cómo se marca el horario en catalán?',
@@ -278,6 +300,7 @@ export const languageCatalog = {
         block: 'Bloque III — A1–A2 esenciales',
         title: 'Tiempo y frecuencia',
         input: ['Sempre, sovint, a vegades.'],
+        translations: ['Siempre, a menudo, a veces.'],
         challenges: [
           '¿Cómo ordenarías estos adverbios por frecuencia?',
           '¿En qué posición de la frase suelen aparecer?',
@@ -299,6 +322,7 @@ export const languageCatalog = {
         block: 'Bloque III — A1–A2 esenciales',
         title: 'Futuro inmediato',
         input: ['Aniré a Barcelona.', 'Vull viatjar.'],
+        translations: ['Iré a Barcelona.', 'Quiero viajar.'],
         challenges: [
           '¿Qué forma verbal expresa el futuro simple?',
           '¿Qué matiz aporta "vull + infinitiu"?',
@@ -320,6 +344,7 @@ export const languageCatalog = {
         block: 'Bloque III — A1–A2 esenciales',
         title: 'Preguntar y responder',
         input: ['On vius?', 'Què fas?'],
+        translations: ['¿Dónde vives?', '¿Qué haces?'],
         challenges: [
           '¿Qué palabras interrogativas ves en catalán?',
           '¿Cómo cambia la estructura con preguntas directas?',
@@ -341,6 +366,7 @@ export const languageCatalog = {
         block: 'Bloque III — A1–A2 esenciales',
         title: 'Comer y beber',
         input: ['Tinc gana.', 'Voldria un cafè.'],
+        translations: ['Tengo hambre.', 'Quisiera un café.'],
         challenges: [
           '¿Qué fórmula de cortesía aparece en "voldria"?',
           '¿Cómo expresarías hambre y sed de forma natural?',
@@ -377,6 +403,12 @@ export const languageCatalog = {
           'Sono a casa.',
           'Oggi sono tranquillo.'
         ],
+        translations: [
+          'Estoy cansado.',
+          'Soy profesor.',
+          'Estoy en casa.',
+          'Hoy estoy tranquilo.'
+        ],
         challenges: [
           '¿Qué verbo cubre identidad, estado y localización en italiano?',
           '¿En qué casos el italiano no separa ser/estar como el español?',
@@ -404,9 +436,10 @@ export const languageCatalog = {
           'Questo libro è mio.',
           'È la casa di Marco.'
         ],
+        translations: ['Mi libro está aquí.', 'Este libro es mío.', 'Es la casa de Marco.'],
         challenges: [
-          '¿Qué diferencia hay entre \"il mio\" y \"mio\"?',
-          '¿Cómo se marca la posesión con \"di\"?',
+          '¿Qué diferencia hay entre "il mio" y "mio"?',
+          '¿Cómo se marca la posesión con "di"?',
           '¿Qué papel juega el artículo definido en italiano?'
         ],
         explanation:
@@ -426,14 +459,12 @@ export const languageCatalog = {
         id: 'it-cap-3',
         block: 'Bloque I — Fundamentos',
         title: 'Pasado: passato prossimo',
-        input: [
-          'Ieri sono andato al cinema.',
-          'Abbiamo parlato molto.'
-        ],
+        input: ['Ieri sono andato al cinema.', 'Abbiamo parlato molto.'],
+        translations: ['Ayer fui al cine.', 'Hablamos mucho.'],
         challenges: [
           '¿Qué auxiliar aparece con el participio?',
           '¿Qué diferencia notas con respecto al pasado perifrástico catalán?',
-          '¿Qué personas reconoces en \"sono\" y \"abbiamo\"?'
+          '¿Qué personas reconoces en "sono" y "abbiamo"?'
         ],
         explanation:
           'El passato prossimo se forma con auxiliar + participio pasado.\n\n' +
@@ -452,12 +483,10 @@ export const languageCatalog = {
         id: 'it-cap-4',
         block: 'Bloque I — Fundamentos',
         title: 'Gustar: piacere',
-        input: [
-          'Mi piace il caffè.',
-          'Non gli piacciono i film lunghi.'
-        ],
+        input: ['Mi piace il caffè.', 'Non gli piacciono i film lunghi.'],
+        translations: ['Me gusta el café.', 'No le gustan las películas largas.'],
         challenges: [
-          '¿Quién es el sujeto gramatical con \"piacere\"?',
+          '¿Quién es el sujeto gramatical con "piacere"?',
           '¿Qué pronombre indica a la persona que siente el gusto?',
           '¿Cómo cambia la concordancia con singular y plural?'
         ],

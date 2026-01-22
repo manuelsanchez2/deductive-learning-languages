@@ -6,6 +6,7 @@
   let language = 'catalan';
   let completed = [];
   let openChapters = [];
+  let showTranslations = [];
   let voices = [];
   let speechReady = false;
 
@@ -96,6 +97,12 @@
     persistList(`openChapters-${language}`, openChapters);
   };
 
+  const toggleTranslations = (id) => {
+    showTranslations = showTranslations.includes(id)
+      ? showTranslations.filter((chapterId) => chapterId !== id)
+      : [...showTranslations, id];
+  };
+
   const summarySnippet = (text) => {
     if (!text) return '';
     const [first] = text.split('. ');
@@ -107,6 +114,7 @@
     language = next;
     completed = loadStoredList(`completedChapters-${language}`);
     openChapters = loadStoredList(`openChapters-${language}`);
+    showTranslations = [];
     persistList('selectedLanguage', language);
   };
 </script>
@@ -207,11 +215,18 @@
               aria-label={`Capítulo ${chapter.number}: ${chapter.title}`}
             >
               <div class="section">
-                <h3>Input (ejemplos en catalán)</h3>
+                <h3>Input (ejemplos en el idioma)</h3>
                 <ul class="phrase-list">
-                  {#each chapter.input as line}
+                  {#each chapter.input as line, index}
                     <li>
-                      <span>{line}</span>
+                      <div class="phrase-stack">
+                        <span>{line}</span>
+                        {#if showTranslations.includes(chapter.id)}
+                          <span class="translation-line">
+                            {chapter.translations?.[index] || 'Traducción pendiente.'}
+                          </span>
+                        {/if}
+                      </div>
                       <button
                         class="audio"
                         on:click={() => speak(line)}
@@ -228,6 +243,16 @@
                   </button>
                   <button class="ghost" on:click={() => speakChapter(chapter)}>
                     Reproducir capítulo completo
+                  </button>
+                  <button
+                    class:active-toggle={showTranslations.includes(chapter.id)}
+                    class="ghost toggle-translation"
+                    on:click={() => toggleTranslations(chapter.id)}
+                    aria-pressed={showTranslations.includes(chapter.id)}
+                  >
+                    {showTranslations.includes(chapter.id)
+                      ? 'Ocultar traducción'
+                      : 'Mostrar traducción'}
                   </button>
                 </div>
               </div>
@@ -556,6 +581,16 @@
     gap: 12px;
   }
 
+  .phrase-stack {
+    display: grid;
+    gap: 4px;
+  }
+
+  .translation-line {
+    font-size: 0.95rem;
+    color: #7b5b34;
+  }
+
   .challenge-list li {
     padding-left: 16px;
     position: relative;
@@ -615,6 +650,11 @@
     padding: 8px 14px;
     border-radius: 999px;
     font-weight: 600;
+  }
+
+  .toggle-translation.active-toggle {
+    background: #2f2416;
+    color: #f8e7c6;
   }
 
   .vocab-section .term {
