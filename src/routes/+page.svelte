@@ -7,6 +7,7 @@
   let completed = []
   let openChapters = []
   let showTranslations = []
+  let showTextTranslations = []
   let voices = []
   let speechReady = false
 
@@ -113,6 +114,12 @@
       : [...showTranslations, id]
   }
 
+  const toggleTextTranslations = (id) => {
+    showTextTranslations = showTextTranslations.includes(id)
+      ? showTextTranslations.filter((textId) => textId !== id)
+      : [...showTextTranslations, id]
+  }
+
   const summarySnippet = (text) => {
     if (!text) return ""
     const [first] = text.split(". ")
@@ -125,6 +132,7 @@
     completed = loadStoredList(`completedChapters-${language}`)
     openChapters = loadStoredList(`openChapters-${language}`)
     showTranslations = []
+    showTextTranslations = []
     persistList("selectedLanguage", language)
   }
 </script>
@@ -394,7 +402,7 @@
         <p>Lecturas cortas para medir comprensión desde A1 hasta B2.</p>
       </div>
       <div class="texts-grid">
-        {#each texts as item}
+        {#each texts as item, index}
           <article class="text-card">
             <div class="text-card-header">
               <div>
@@ -410,6 +418,23 @@
               </button>
             </div>
             <p class="text-body">{item.text}</p>
+            {#if showTextTranslations.includes(index)}
+              <p class="text-translation">
+                {item.translation || "Traducción pendiente."}
+              </p>
+            {/if}
+            <div class="text-actions">
+              <button
+                class:active-toggle={showTextTranslations.includes(index)}
+                class="ghost toggle-translation"
+                on:click={() => toggleTextTranslations(index)}
+                aria-pressed={showTextTranslations.includes(index)}
+              >
+                {showTextTranslations.includes(index)
+                  ? "Ocultar traducción"
+                  : "Mostrar traducción"}
+              </button>
+            </div>
           </article>
         {/each}
       </div>
@@ -879,6 +904,17 @@
     margin: 0;
     line-height: 1.6;
     color: #2f2416;
+  }
+
+  .text-translation {
+    margin: 0;
+    line-height: 1.6;
+    color: #7b5b34;
+  }
+
+  .text-actions {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .vocab-grid {

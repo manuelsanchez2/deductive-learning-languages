@@ -80,22 +80,34 @@ export const languageCatalog = {
       {
         title: 'Una rutina amb detalls',
         level: 'A1',
-        text: 'Em llevo a les set, esmorzo ràpid i després treballo des de casa.'
+        text:
+          'Em llevo a les set, esmorzo amb calma i preparo el dia. Treballo des de casa, però a vegades surto a fer un cafè amb un amic.',
+        translation:
+          'Me levanto a las siete, desayuno con calma y preparo el día. Trabajo desde casa, pero a veces salgo a tomar un café con un amigo.'
       },
       {
         title: 'Dues opcions',
         level: 'A2',
-        text: 'Normalment vaig a l’oficina, però avui treballo a casa perquè plou.'
+        text:
+          'Normalment vaig a l’oficina, però avui treballo a casa perquè plou. A la tarda he de sortir a comprar una mica de menjar.',
+        translation:
+          'Normalmente voy a la oficina, pero hoy trabajo en casa porque llueve. Por la tarde tengo que salir a comprar algo de comida.'
       },
       {
         title: 'Un record curt',
         level: 'B1',
-        text: 'Quan era petit, passava els estius al poble, i encara en tinc molts records.'
+        text:
+          'Quan era petit, passava els estius al poble amb la família. Hi havia un riu i jugàvem fins tard; encara en tinc molts records.',
+        translation:
+          'Cuando era pequeño, pasaba los veranos en el pueblo con la familia. Había un río y jugábamos hasta tarde; aún tengo muchos recuerdos.'
       },
       {
         title: 'Una decisió raonada',
         level: 'B2',
-        text: 'Tot i que tenia poc temps, vaig acceptar el projecte perquè em permetia aprendre més.'
+        text:
+          'Tot i que tenia poc temps, vaig acceptar el projecte perquè em permetia aprendre més. Va ser exigent, però em va aportar confiança.',
+        translation:
+          'Aunque tenía poco tiempo, acepté el proyecto porque me permitía aprender más. Fue exigente, pero me dio confianza.'
       }
     ],
     chapters: [
@@ -641,22 +653,34 @@ export const languageCatalog = {
       {
         title: 'Routine semplice',
         level: 'A1',
-        text: 'Mi sveglio presto, faccio colazione e poi lavoro da casa.'
+        text:
+          'Mi sveglio presto, faccio colazione con calma e poi lavoro da casa. La sera preparo qualcosa di semplice e leggo un po’.',
+        translation:
+          'Me despierto temprano, desayuno con calma y luego trabajo desde casa. Por la noche preparo algo sencillo y leo un poco.'
       },
       {
         title: 'Un imprevisto',
         level: 'A2',
-        text: 'Di solito vado in ufficio, ma oggi resto a casa perché piove.'
+        text:
+          'Di solito vado in ufficio, ma oggi resto a casa perché piove. Nel pomeriggio devo uscire a comprare pane e verdure.',
+        translation:
+          'Normalmente voy a la oficina, pero hoy me quedo en casa porque llueve. Por la tarde debo salir a comprar pan y verduras.'
       },
       {
         title: 'Un ricordo',
         level: 'B1',
-        text: 'Quando ero piccolo, passavo l’estate al mare e mi ricordo ogni dettaglio.'
+        text:
+          'Quando ero piccolo, passavo l’estate al mare con la famiglia. Giocavamo sulla spiaggia fino a tardi e ricordo ancora quel profumo.',
+        translation:
+          'Cuando era pequeño, pasaba el verano en el mar con la familia. Jugábamos en la playa hasta tarde y todavía recuerdo ese olor.'
       },
       {
         title: 'Una scelta',
         level: 'B2',
-        text: 'Nonostante avessi poco tempo, ho accettato il progetto perché volevo imparare di più.'
+        text:
+          'Nonostante avessi poco tempo, ho accettato il progetto perché volevo imparare di più. È stato impegnativo, ma ne è valsa la pena.',
+        translation:
+          'Aunque tenía poco tiempo, acepté el proyecto porque quería aprender más. Fue exigente, pero valió la pena.'
       }
     ],
     chapters: [
@@ -1163,22 +1187,34 @@ export const languageCatalog = {
       {
         title: 'Rutina simple',
         level: 'A1',
-        text: 'Я встаю рано, завтракаю и потом работаю.'
+        text:
+          'Я встаю рано, завтракаю и потом работаю. Вечером я готовлю что-нибудь простое и отдыхаю.',
+        translation:
+          'Me levanto temprano, desayuno y luego trabajo. Por la tarde-noche preparo algo sencillo y descanso.'
       },
       {
         title: 'Un cambio de plan',
         level: 'A2',
-        text: 'Обычно я хожу в офис, но сегодня работаю дома, потому что идёт дождь.'
+        text:
+          'Обычно я хожу в офис, но сегодня работаю дома, потому что идёт дождь. После обеда мне нужно сходить в магазин.',
+        translation:
+          'Normalmente voy a la oficina, pero hoy trabajo en casa porque está lloviendo. Después de comer necesito ir a la tienda.'
       },
       {
         title: 'Un recuerdo',
         level: 'B1',
-        text: 'Когда я был маленьким, я часто ездил к бабушке и хорошо это помню.'
+        text:
+          'Когда я был маленьким, я часто ездил к бабушке. Мы гуляли у реки до позднего вечера, и я хорошо это помню.',
+        translation:
+          'Cuando era pequeño, a menudo iba a casa de mi abuela. Paseábamos junto al río hasta tarde y lo recuerdo bien.'
       },
       {
         title: 'Una decisión',
         level: 'B2',
-        text: 'Хотя у меня было мало времени, я принял проект, потому что хотел учиться.'
+        text:
+          'Хотя у меня было мало времени, я принял проект, потому что хотел учиться. Это было трудно, но дало мне уверенность.',
+        translation:
+          'Aunque tenía poco tiempo, acepté el proyecto porque quería aprender. Fue difícil, pero me dio confianza.'
       }
     ],
     chapters: [
