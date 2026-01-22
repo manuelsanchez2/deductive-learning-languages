@@ -25,6 +25,7 @@
       summary: chapter.summary
     }))
   );
+  $: verbs = languageData?.verbs ?? [];
 
   onMount(() => {
     if (typeof window === 'undefined') return;
@@ -186,6 +187,13 @@
     >
       📚 Vocabulario
     </button>
+    <button
+      class:active={view === 'verbs'}
+      on:click={() => (view = 'verbs')}
+      aria-pressed={view === 'verbs'}
+    >
+      🧭 Verbos
+    </button>
   </nav>
 
   {#if view === 'chapters'}
@@ -310,7 +318,7 @@
         </article>
       {/each}
     </section>
-  {:else}
+  {:else if view === 'vocab'}
     <section class="vocab-view" aria-label="Vista de vocabulario">
       <div class="vocab-header">
         <h2>Vocabulario global</h2>
@@ -337,6 +345,38 @@
               Capítulo {item.chapterNumber}: {item.chapterTitle}
             </p>
             <p class="vocab-context">{summarySnippet(item.summary)}</p>
+          </article>
+        {/each}
+      </div>
+    </section>
+  {:else}
+    <section class="verbs-view" aria-label="Vista de verbos">
+      <div class="vocab-header">
+        <h2>Verbos principales</h2>
+        <p>Conjugaciones clave en presente y tiempos frecuentes por persona.</p>
+      </div>
+      <div class="verbs-grid">
+        {#each verbs as verb}
+          <article class="verb-card">
+            <div>
+              <h3>{verb.title}</h3>
+              {#if verb.notes}
+                <p class="verb-notes">{verb.notes}</p>
+              {/if}
+            </div>
+            {#each verb.tenses as tense}
+              <div class="verb-tense">
+                <h4>{tense.name}</h4>
+                <ul>
+                  {#each tense.persons as person}
+                    <li>
+                      <span class="person">{person.label}</span>
+                      <span class="form">{person.form}</span>
+                    </li>
+                  {/each}
+                </ul>
+              </div>
+            {/each}
           </article>
         {/each}
       </div>
@@ -681,6 +721,71 @@
     margin: 0 0 8px;
     font-family: 'Fraunces', 'Times New Roman', serif;
     font-size: 2rem;
+  }
+
+  .verbs-view {
+    display: grid;
+    gap: 24px;
+  }
+
+  .verbs-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .verb-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 12px 24px rgba(82, 57, 20, 0.12);
+    display: grid;
+    gap: 12px;
+  }
+
+  .verb-card h3 {
+    margin: 0;
+    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-size: 1.4rem;
+  }
+
+  .verb-notes {
+    margin: 6px 0 0;
+    color: #6c5a44;
+    font-size: 0.95rem;
+  }
+
+  .verb-tense h4 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: #7b4a15;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .verb-tense ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+  }
+
+  .verb-tense li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 0.95rem;
+  }
+
+  .verb-tense .person {
+    font-weight: 600;
+    color: #4d3a25;
+  }
+
+  .verb-tense .form {
+    font-weight: 700;
+    color: #2f2416;
   }
 
   .vocab-grid {

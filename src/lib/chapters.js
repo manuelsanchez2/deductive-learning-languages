@@ -6,6 +6,76 @@ export const languageCatalog = {
     heroTitle: 'Catalán desde el español, por descubrimiento',
     heroDescription:
       'Observa ejemplos reales, formula hipótesis y confirma con explicaciones claras. Marca tu progreso y escucha cada frase con audio integrado.',
+    verbs: [
+      {
+        title: 'Ser',
+        notes: 'Identidad o rasgo percibido como estable.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'sóc' },
+              { label: 'Tú', form: 'ets' },
+              { label: 'Él/Ella', form: 'és' },
+              { label: 'Nosotros', form: 'som' },
+              { label: 'Vosotros', form: 'sou' },
+              { label: 'Ellos', form: 'són' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Estar',
+        notes: 'Estado, resultado o localización.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'estic' },
+              { label: 'Tú', form: 'estàs' },
+              { label: 'Él/Ella', form: 'està' },
+              { label: 'Nosotros', form: 'estem' },
+              { label: 'Vosotros', form: 'esteu' },
+              { label: 'Ellos', form: 'estan' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Anar (pasado perifrástico)',
+        notes: 'Auxiliar del pasado narrativo: anar + infinitivo.',
+        tenses: [
+          {
+            name: 'Presente auxiliar',
+            persons: [
+              { label: 'Yo', form: 'vaig' },
+              { label: 'Tú', form: 'vas' },
+              { label: 'Él/Ella', form: 'va' },
+              { label: 'Nosotros', form: 'vam' },
+              { label: 'Vosotros', form: 'vau' },
+              { label: 'Ellos', form: 'van' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Tenir',
+        notes: 'Posesión y necesidad.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'tinc' },
+              { label: 'Tú', form: 'tens' },
+              { label: 'Él/Ella', form: 'té' },
+              { label: 'Nosotros', form: 'tenim' },
+              { label: 'Vosotros', form: 'teniu' },
+              { label: 'Ellos', form: 'tenen' }
+            ]
+          }
+        ]
+      }
+    ],
     chapters: [
       {
         id: 'cap-1',
@@ -392,6 +462,76 @@ export const languageCatalog = {
     heroTitle: 'Italiano desde el español, por descubrimiento',
     heroDescription:
       'Explora ejemplos italianos naturales, deduce patrones y confirma con explicaciones claras. Mantén el mismo ritmo deductivo y el audio integrado.',
+    verbs: [
+      {
+        title: 'Essere',
+        notes: 'Identidad, estado y localización.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'sono' },
+              { label: 'Tú', form: 'sei' },
+              { label: 'Él/Ella', form: 'è' },
+              { label: 'Nosotros', form: 'siamo' },
+              { label: 'Vosotros', form: 'siete' },
+              { label: 'Ellos', form: 'sono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Avere',
+        notes: 'Posesión y auxiliar del pasado.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ho' },
+              { label: 'Tú', form: 'hai' },
+              { label: 'Él/Ella', form: 'ha' },
+              { label: 'Nosotros', form: 'abbiamo' },
+              { label: 'Vosotros', form: 'avete' },
+              { label: 'Ellos', form: 'hanno' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Andare',
+        notes: 'Movimiento y dirección.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'vado' },
+              { label: 'Tú', form: 'vai' },
+              { label: 'Él/Ella', form: 'va' },
+              { label: 'Nosotros', form: 'andiamo' },
+              { label: 'Vosotros', form: 'andate' },
+              { label: 'Ellos', form: 'vanno' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Parlare',
+        notes: 'Verbo regular en -are.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'parlo' },
+              { label: 'Tú', form: 'parli' },
+              { label: 'Él/Ella', form: 'parla' },
+              { label: 'Nosotros', form: 'parliamo' },
+              { label: 'Vosotros', form: 'parlate' },
+              { label: 'Ellos', form: 'parlano' }
+            ]
+          }
+        ]
+      }
+    ],
     chapters: [
       {
         id: 'it-cap-1',
@@ -738,6 +878,76 @@ export const languageCatalog = {
     heroTitle: 'Ruso desde el español, por descubrimiento',
     heroDescription:
       'Observa ejemplos rusos reales, deduce patrones y confirma con explicaciones claras. Audio integrado para ritmo y pronunciación.',
+    verbs: [
+      {
+        title: 'Быть (ser/estar)',
+        notes: 'En presente se omite; en pasado aparece.',
+        tenses: [
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo (m.)', form: 'был' },
+              { label: 'Yo (f.)', form: 'была' },
+              { label: 'Él', form: 'был' },
+              { label: 'Ella', form: 'была' },
+              { label: 'Nosotros', form: 'были' },
+              { label: 'Ellos', form: 'были' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Идти (ir, en curso)',
+        notes: 'Movimiento puntual o en curso.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'иду' },
+              { label: 'Tú', form: 'идёшь' },
+              { label: 'Él/Ella', form: 'идёт' },
+              { label: 'Nosotros', form: 'идём' },
+              { label: 'Vosotros', form: 'идёте' },
+              { label: 'Ellos', form: 'идут' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Говорить (hablar)',
+        notes: 'Verbo regular del presente.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'говорю' },
+              { label: 'Tú', form: 'говоришь' },
+              { label: 'Él/Ella', form: 'говорит' },
+              { label: 'Nosotros', form: 'говорим' },
+              { label: 'Vosotros', form: 'говорите' },
+              { label: 'Ellos', form: 'говорят' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Читать (leer)',
+        notes: 'Imperfectivo: acción en curso.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'читаю' },
+              { label: 'Tú', form: 'читаешь' },
+              { label: 'Él/Ella', form: 'читает' },
+              { label: 'Nosotros', form: 'читаем' },
+              { label: 'Vosotros', form: 'читаете' },
+              { label: 'Ellos', form: 'читают' }
+            ]
+          }
+        ]
+      }
+    ],
     chapters: [
       {
         id: 'ru-cap-1',
