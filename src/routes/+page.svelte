@@ -8,6 +8,8 @@
   let openChapters = []
   let showTranslations = []
   let showTextTranslations = []
+  let tenseFilter = "Presente"
+  let verbQuery = ""
   let voices = []
   let speechReady = false
 
@@ -28,6 +30,33 @@
   )
   $: verbs = languageData?.verbs ?? []
   $: texts = languageData?.texts ?? []
+  $: availableTenses = (() => {
+    const seen = new Set()
+    const ordered = []
+    for (const verb of verbs) {
+      for (const tense of verb.tenses) {
+        if (!seen.has(tense.name)) {
+          seen.add(tense.name)
+          ordered.push(tense.name)
+        }
+      }
+    }
+    return ordered
+  })()
+  $: filteredVerbs = verbs
+    .map((verb) => ({
+      ...verb,
+      tenses:
+        tenseFilter === "all"
+          ? verb.tenses
+          : verb.tenses.filter((tense) => tense.name === tenseFilter),
+    }))
+    .filter((verb) => {
+      const matchesQuery = verbQuery
+        ? verb.title.toLowerCase().includes(verbQuery.toLowerCase())
+        : true
+      return matchesQuery && verb.tenses.length
+    })
 
   onMount(() => {
     if (typeof window === "undefined") return
@@ -133,13 +162,21 @@
     openChapters = loadStoredList(`openChapters-${language}`)
     showTranslations = []
     showTextTranslations = []
+    tenseFilter = "Presente"
+    verbQuery = ""
     persistList("selectedLanguage", language)
+  }
+
+  $: if (availableTenses.length) {
+    if (!availableTenses.includes(tenseFilter)) {
+      tenseFilter = availableTenses.includes("Presente") ? "Presente" : "all"
+    }
   }
 </script>
 
 <main>
   <div class="top-bar">
-    <span class="brand">Deductivo</span>
+    <span class="brand ml-2">Deductivo</span>
     <div class="language-switch" role="group" aria-label="Cambiar idioma">
       {#each Object.values(languageCatalog) as lang}
         <button
@@ -369,8 +406,27 @@
         <h2>Verbos principales</h2>
         <p>Conjugaciones clave en presente y tiempos frecuentes por persona.</p>
       </div>
+      <div class="verbs-filters">
+        <label class="filter">
+          Tiempo
+          <select bind:value={tenseFilter}>
+            <option value="all">Todos</option>
+            {#each availableTenses as tense}
+              <option value={tense}>{tense}</option>
+            {/each}
+          </select>
+        </label>
+        <label class="filter">
+          Buscar verbo
+          <input
+            type="search"
+            placeholder="Escribe un verbo"
+            bind:value={verbQuery}
+          />
+        </label>
+      </div>
       <div class="verbs-grid">
-        {#each verbs as verb}
+        {#each filteredVerbs as verb}
           <article class="verb-card">
             <div>
               <h3>{verb.title}</h3>
@@ -504,6 +560,7 @@
     text-transform: uppercase;
     font-size: 0.9rem;
     color: #7b4a15;
+    margin-left: 0.5rem;
   }
 
   .language-switch {
@@ -799,6 +856,31 @@
     display: grid;
     gap: 18px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .verbs-filters {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .verbs-filters .filter {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+    color: #5a4c3c;
+  }
+
+  .verbs-filters select,
+  .verbs-filters input {
+    border: none;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background: #fff8ee;
+    box-shadow: inset 0 0 0 1px rgba(166, 108, 31, 0.2);
+    font-family: "Work Sans", "Helvetica Neue", sans-serif;
+    color: #2f2416;
   }
 
   .verb-card {

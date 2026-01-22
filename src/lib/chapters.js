@@ -21,6 +21,39 @@ export const languageCatalog = {
               { label: 'Vosotros', form: 'sou' },
               { label: 'Ellos', form: 'són' }
             ]
+          },
+          {
+            name: 'Pasado perifrástico',
+            persons: [
+              { label: 'Yo', form: 'vaig ser' },
+              { label: 'Tú', form: 'vas ser' },
+              { label: 'Él/Ella', form: 'va ser' },
+              { label: 'Nosotros', form: 'vam ser' },
+              { label: 'Vosotros', form: 'vau ser' },
+              { label: 'Ellos', form: 'van ser' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'seré' },
+              { label: 'Tú', form: 'seràs' },
+              { label: 'Él/Ella', form: 'serà' },
+              { label: 'Nosotros', form: 'serem' },
+              { label: 'Vosotros', form: 'sereu' },
+              { label: 'Ellos', form: 'seran' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'seria' },
+              { label: 'Tú', form: 'series' },
+              { label: 'Él/Ella', form: 'seria' },
+              { label: 'Nosotros', form: 'seríem' },
+              { label: 'Vosotros', form: 'seríeu' },
+              { label: 'Ellos', form: 'serien' }
+            ]
           }
         ]
       },
@@ -38,15 +71,48 @@ export const languageCatalog = {
               { label: 'Vosotros', form: 'esteu' },
               { label: 'Ellos', form: 'estan' }
             ]
+          },
+          {
+            name: 'Pasado perifrástico',
+            persons: [
+              { label: 'Yo', form: 'vaig estar' },
+              { label: 'Tú', form: 'vas estar' },
+              { label: 'Él/Ella', form: 'va estar' },
+              { label: 'Nosotros', form: 'vam estar' },
+              { label: 'Vosotros', form: 'vau estar' },
+              { label: 'Ellos', form: 'van estar' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'estaré' },
+              { label: 'Tú', form: 'estaràs' },
+              { label: 'Él/Ella', form: 'estarà' },
+              { label: 'Nosotros', form: 'estarem' },
+              { label: 'Vosotros', form: 'estareu' },
+              { label: 'Ellos', form: 'estaran' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'estaria' },
+              { label: 'Tú', form: 'estaries' },
+              { label: 'Él/Ella', form: 'estaria' },
+              { label: 'Nosotros', form: 'estaríem' },
+              { label: 'Vosotros', form: 'estaríeu' },
+              { label: 'Ellos', form: 'estarien' }
+            ]
           }
         ]
       },
       {
-        title: 'Anar (pasado perifrástico)',
-        notes: 'Auxiliar del pasado narrativo: anar + infinitivo.',
+        title: 'Anar',
+        notes: 'Movimiento y auxiliar del pasado: anar + infinitivo.',
         tenses: [
           {
-            name: 'Presente auxiliar',
+            name: 'Presente',
             persons: [
               { label: 'Yo', form: 'vaig' },
               { label: 'Tú', form: 'vas' },
@@ -54,6 +120,39 @@ export const languageCatalog = {
               { label: 'Nosotros', form: 'vam' },
               { label: 'Vosotros', form: 'vau' },
               { label: 'Ellos', form: 'van' }
+            ]
+          },
+          {
+            name: 'Pasado perifrástico',
+            persons: [
+              { label: 'Yo', form: 'vaig anar' },
+              { label: 'Tú', form: 'vas anar' },
+              { label: 'Él/Ella', form: 'va anar' },
+              { label: 'Nosotros', form: 'vam anar' },
+              { label: 'Vosotros', form: 'vau anar' },
+              { label: 'Ellos', form: 'van anar' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'aniré' },
+              { label: 'Tú', form: 'aniràs' },
+              { label: 'Él/Ella', form: 'anirà' },
+              { label: 'Nosotros', form: 'anirem' },
+              { label: 'Vosotros', form: 'anireu' },
+              { label: 'Ellos', form: 'aniran' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'aniria' },
+              { label: 'Tú', form: 'aniries' },
+              { label: 'Él/Ella', form: 'aniria' },
+              { label: 'Nosotros', form: 'aniríem' },
+              { label: 'Vosotros', form: 'aniríeu' },
+              { label: 'Ellos', form: 'anirien' }
             ]
           }
         ]
@@ -71,6 +170,243 @@ export const languageCatalog = {
               { label: 'Nosotros', form: 'tenim' },
               { label: 'Vosotros', form: 'teniu' },
               { label: 'Ellos', form: 'tenen' }
+            ]
+          },
+          {
+            name: 'Pasado perifrástico',
+            persons: [
+              { label: 'Yo', form: 'vaig tenir' },
+              { label: 'Tú', form: 'vas tenir' },
+              { label: 'Él/Ella', form: 'va tenir' },
+              { label: 'Nosotros', form: 'vam tenir' },
+              { label: 'Vosotros', form: 'vau tenir' },
+              { label: 'Ellos', form: 'van tenir' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'tindré' },
+              { label: 'Tú', form: 'tindràs' },
+              { label: 'Él/Ella', form: 'tindrà' },
+              { label: 'Nosotros', form: 'tindrem' },
+              { label: 'Vosotros', form: 'tindreu' },
+              { label: 'Ellos', form: 'tindran' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'tindria' },
+              { label: 'Tú', form: 'tindries' },
+              { label: 'Él/Ella', form: 'tindria' },
+              { label: 'Nosotros', form: 'tindríem' },
+              { label: 'Vosotros', form: 'tindríeu' },
+              { label: 'Ellos', form: 'tindrien' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Parlar',
+        notes: 'Verbo regular en -ar.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'parlo' },
+              { label: 'Tú', form: 'parles' },
+              { label: 'Él/Ella', form: 'parla' },
+              { label: 'Nosotros', form: 'parlem' },
+              { label: 'Vosotros', form: 'parleu' },
+              { label: 'Ellos', form: 'parlen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Menjar',
+        notes: 'Verbo regular en -ar con alternancia.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'menjo' },
+              { label: 'Tú', form: 'menges' },
+              { label: 'Él/Ella', form: 'menja' },
+              { label: 'Nosotros', form: 'mengem' },
+              { label: 'Vosotros', form: 'mengeu' },
+              { label: 'Ellos', form: 'mengen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Viure',
+        notes: 'Verbo regular en -ure.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'visc' },
+              { label: 'Tú', form: 'vius' },
+              { label: 'Él/Ella', form: 'viu' },
+              { label: 'Nosotros', form: 'vivim' },
+              { label: 'Vosotros', form: 'viviu' },
+              { label: 'Ellos', form: 'viuen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Venir',
+        notes: 'Movimiento hacia el hablante.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'vinc' },
+              { label: 'Tú', form: 'véns' },
+              { label: 'Él/Ella', form: 've' },
+              { label: 'Nosotros', form: 'venim' },
+              { label: 'Vosotros', form: 'veniu' },
+              { label: 'Ellos', form: 'vénen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Fer',
+        notes: 'Acción general, muy frecuente.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'faig' },
+              { label: 'Tú', form: 'fas' },
+              { label: 'Él/Ella', form: 'fa' },
+              { label: 'Nosotros', form: 'fem' },
+              { label: 'Vosotros', form: 'feu' },
+              { label: 'Ellos', form: 'fan' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Poder',
+        notes: 'Capacidad o posibilidad.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'puc' },
+              { label: 'Tú', form: 'pots' },
+              { label: 'Él/Ella', form: 'pot' },
+              { label: 'Nosotros', form: 'podem' },
+              { label: 'Vosotros', form: 'podeu' },
+              { label: 'Ellos', form: 'poden' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Voler',
+        notes: 'Deseo o intención.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'vull' },
+              { label: 'Tú', form: 'vols' },
+              { label: 'Él/Ella', form: 'vol' },
+              { label: 'Nosotros', form: 'volem' },
+              { label: 'Vosotros', form: 'voleu' },
+              { label: 'Ellos', form: 'volen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Dir',
+        notes: 'Comunicación directa.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'dic' },
+              { label: 'Tú', form: 'dius' },
+              { label: 'Él/Ella', form: 'diu' },
+              { label: 'Nosotros', form: 'diem' },
+              { label: 'Vosotros', form: 'dieu' },
+              { label: 'Ellos', form: 'diuen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Escriure',
+        notes: 'Acción de escribir.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'escric' },
+              { label: 'Tú', form: 'escrius' },
+              { label: 'Él/Ella', form: 'escriu' },
+              { label: 'Nosotros', form: 'escrivim' },
+              { label: 'Vosotros', form: 'escriviu' },
+              { label: 'Ellos', form: 'escriuen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Llegir',
+        notes: 'Acción de leer.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'llegeixo' },
+              { label: 'Tú', form: 'llegeixes' },
+              { label: 'Él/Ella', form: 'llegeix' },
+              { label: 'Nosotros', form: 'llegim' },
+              { label: 'Vosotros', form: 'llegiu' },
+              { label: 'Ellos', form: 'llegeixen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Treballar',
+        notes: 'Actividad laboral.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'treballo' },
+              { label: 'Tú', form: 'treballes' },
+              { label: 'Él/Ella', form: 'treballa' },
+              { label: 'Nosotros', form: 'treballem' },
+              { label: 'Vosotros', form: 'treballeu' },
+              { label: 'Ellos', form: 'treballen' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Estudiar',
+        notes: 'Actividad de aprendizaje.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'estudio' },
+              { label: 'Tú', form: 'estudies' },
+              { label: 'Él/Ella', form: 'estudia' },
+              { label: 'Nosotros', form: 'estudiem' },
+              { label: 'Vosotros', form: 'estudieu' },
+              { label: 'Ellos', form: 'estudien' }
             ]
           }
         ]
@@ -594,6 +930,39 @@ export const languageCatalog = {
               { label: 'Vosotros', form: 'siete' },
               { label: 'Ellos', form: 'sono' }
             ]
+          },
+          {
+            name: 'Passato prossimo',
+            persons: [
+              { label: 'Yo', form: 'sono stato/a' },
+              { label: 'Tú', form: 'sei stato/a' },
+              { label: 'Él/Ella', form: 'è stato/a' },
+              { label: 'Nosotros', form: 'siamo stati/e' },
+              { label: 'Vosotros', form: 'siete stati/e' },
+              { label: 'Ellos', form: 'sono stati/e' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'sarò' },
+              { label: 'Tú', form: 'sarai' },
+              { label: 'Él/Ella', form: 'sarà' },
+              { label: 'Nosotros', form: 'saremo' },
+              { label: 'Vosotros', form: 'sarete' },
+              { label: 'Ellos', form: 'saranno' }
+            ]
+          },
+          {
+            name: 'Condizionale',
+            persons: [
+              { label: 'Yo', form: 'sarei' },
+              { label: 'Tú', form: 'saresti' },
+              { label: 'Él/Ella', form: 'sarebbe' },
+              { label: 'Nosotros', form: 'saremmo' },
+              { label: 'Vosotros', form: 'sareste' },
+              { label: 'Ellos', form: 'sarebbero' }
+            ]
           }
         ]
       },
@@ -610,6 +979,39 @@ export const languageCatalog = {
               { label: 'Nosotros', form: 'abbiamo' },
               { label: 'Vosotros', form: 'avete' },
               { label: 'Ellos', form: 'hanno' }
+            ]
+          },
+          {
+            name: 'Passato prossimo',
+            persons: [
+              { label: 'Yo', form: 'ho avuto' },
+              { label: 'Tú', form: 'hai avuto' },
+              { label: 'Él/Ella', form: 'ha avuto' },
+              { label: 'Nosotros', form: 'abbiamo avuto' },
+              { label: 'Vosotros', form: 'avete avuto' },
+              { label: 'Ellos', form: 'hanno avuto' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'avrò' },
+              { label: 'Tú', form: 'avrai' },
+              { label: 'Él/Ella', form: 'avrà' },
+              { label: 'Nosotros', form: 'avremo' },
+              { label: 'Vosotros', form: 'avrete' },
+              { label: 'Ellos', form: 'avranno' }
+            ]
+          },
+          {
+            name: 'Condizionale',
+            persons: [
+              { label: 'Yo', form: 'avrei' },
+              { label: 'Tú', form: 'avresti' },
+              { label: 'Él/Ella', form: 'avrebbe' },
+              { label: 'Nosotros', form: 'avremmo' },
+              { label: 'Vosotros', form: 'avreste' },
+              { label: 'Ellos', form: 'avrebbero' }
             ]
           }
         ]
@@ -628,6 +1030,39 @@ export const languageCatalog = {
               { label: 'Vosotros', form: 'andate' },
               { label: 'Ellos', form: 'vanno' }
             ]
+          },
+          {
+            name: 'Passato prossimo',
+            persons: [
+              { label: 'Yo', form: 'sono andato/a' },
+              { label: 'Tú', form: 'sei andato/a' },
+              { label: 'Él/Ella', form: 'è andato/a' },
+              { label: 'Nosotros', form: 'siamo andati/e' },
+              { label: 'Vosotros', form: 'siete andati/e' },
+              { label: 'Ellos', form: 'sono andati/e' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'andrò' },
+              { label: 'Tú', form: 'andrai' },
+              { label: 'Él/Ella', form: 'andrà' },
+              { label: 'Nosotros', form: 'andremo' },
+              { label: 'Vosotros', form: 'andrete' },
+              { label: 'Ellos', form: 'andranno' }
+            ]
+          },
+          {
+            name: 'Condizionale',
+            persons: [
+              { label: 'Yo', form: 'andrei' },
+              { label: 'Tú', form: 'andresti' },
+              { label: 'Él/Ella', form: 'andrebbe' },
+              { label: 'Nosotros', form: 'andremmo' },
+              { label: 'Vosotros', form: 'andreste' },
+              { label: 'Ellos', form: 'andrebbero' }
+            ]
           }
         ]
       },
@@ -644,6 +1079,243 @@ export const languageCatalog = {
               { label: 'Nosotros', form: 'parliamo' },
               { label: 'Vosotros', form: 'parlate' },
               { label: 'Ellos', form: 'parlano' }
+            ]
+          },
+          {
+            name: 'Passato prossimo',
+            persons: [
+              { label: 'Yo', form: 'ho parlato' },
+              { label: 'Tú', form: 'hai parlato' },
+              { label: 'Él/Ella', form: 'ha parlato' },
+              { label: 'Nosotros', form: 'abbiamo parlato' },
+              { label: 'Vosotros', form: 'avete parlato' },
+              { label: 'Ellos', form: 'hanno parlato' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'parlerò' },
+              { label: 'Tú', form: 'parlerai' },
+              { label: 'Él/Ella', form: 'parlerà' },
+              { label: 'Nosotros', form: 'parleremo' },
+              { label: 'Vosotros', form: 'parlerete' },
+              { label: 'Ellos', form: 'parleranno' }
+            ]
+          },
+          {
+            name: 'Condizionale',
+            persons: [
+              { label: 'Yo', form: 'parlerei' },
+              { label: 'Tú', form: 'parleresti' },
+              { label: 'Él/Ella', form: 'parlerebbe' },
+              { label: 'Nosotros', form: 'parleremmo' },
+              { label: 'Vosotros', form: 'parlereste' },
+              { label: 'Ellos', form: 'parlerebbero' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Fare',
+        notes: 'Verbo irregular muy frecuente.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'faccio' },
+              { label: 'Tú', form: 'fai' },
+              { label: 'Él/Ella', form: 'fa' },
+              { label: 'Nosotros', form: 'facciamo' },
+              { label: 'Vosotros', form: 'fate' },
+              { label: 'Ellos', form: 'fanno' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Dire',
+        notes: 'Comunicación directa.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'dico' },
+              { label: 'Tú', form: 'dici' },
+              { label: 'Él/Ella', form: 'dice' },
+              { label: 'Nosotros', form: 'diciamo' },
+              { label: 'Vosotros', form: 'dite' },
+              { label: 'Ellos', form: 'dicono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Vedere',
+        notes: 'Percepción visual.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'vedo' },
+              { label: 'Tú', form: 'vedi' },
+              { label: 'Él/Ella', form: 'vede' },
+              { label: 'Nosotros', form: 'vediamo' },
+              { label: 'Vosotros', form: 'vedete' },
+              { label: 'Ellos', form: 'vedono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Venire',
+        notes: 'Movimiento hacia el hablante.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'vengo' },
+              { label: 'Tú', form: 'vieni' },
+              { label: 'Él/Ella', form: 'viene' },
+              { label: 'Nosotros', form: 'veniamo' },
+              { label: 'Vosotros', form: 'venite' },
+              { label: 'Ellos', form: 'vengono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Potere',
+        notes: 'Posibilidad o capacidad.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'posso' },
+              { label: 'Tú', form: 'puoi' },
+              { label: 'Él/Ella', form: 'può' },
+              { label: 'Nosotros', form: 'possiamo' },
+              { label: 'Vosotros', form: 'potete' },
+              { label: 'Ellos', form: 'possono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Volere',
+        notes: 'Deseo o voluntad.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'voglio' },
+              { label: 'Tú', form: 'vuoi' },
+              { label: 'Él/Ella', form: 'vuole' },
+              { label: 'Nosotros', form: 'vogliamo' },
+              { label: 'Vosotros', form: 'volete' },
+              { label: 'Ellos', form: 'vogliono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Dovere',
+        notes: 'Obligación.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'devo' },
+              { label: 'Tú', form: 'devi' },
+              { label: 'Él/Ella', form: 'deve' },
+              { label: 'Nosotros', form: 'dobbiamo' },
+              { label: 'Vosotros', form: 'dovete' },
+              { label: 'Ellos', form: 'devono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Prendere',
+        notes: 'Verbo regular en -ere.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'prendo' },
+              { label: 'Tú', form: 'prendi' },
+              { label: 'Él/Ella', form: 'prende' },
+              { label: 'Nosotros', form: 'prendiamo' },
+              { label: 'Vosotros', form: 'prendete' },
+              { label: 'Ellos', form: 'prendono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Uscire',
+        notes: 'Salir.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'esco' },
+              { label: 'Tú', form: 'esci' },
+              { label: 'Él/Ella', form: 'esce' },
+              { label: 'Nosotros', form: 'usciamo' },
+              { label: 'Vosotros', form: 'uscite' },
+              { label: 'Ellos', form: 'escono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Scrivere',
+        notes: 'Acción de escribir.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'scrivo' },
+              { label: 'Tú', form: 'scrivi' },
+              { label: 'Él/Ella', form: 'scrive' },
+              { label: 'Nosotros', form: 'scriviamo' },
+              { label: 'Vosotros', form: 'scrivete' },
+              { label: 'Ellos', form: 'scrivono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Leggere',
+        notes: 'Acción de leer.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'leggo' },
+              { label: 'Tú', form: 'leggi' },
+              { label: 'Él/Ella', form: 'legge' },
+              { label: 'Nosotros', form: 'leggiamo' },
+              { label: 'Vosotros', form: 'leggete' },
+              { label: 'Ellos', form: 'leggono' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Lavorare',
+        notes: 'Actividad laboral.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'lavoro' },
+              { label: 'Tú', form: 'lavori' },
+              { label: 'Él/Ella', form: 'lavora' },
+              { label: 'Nosotros', form: 'lavoriamo' },
+              { label: 'Vosotros', form: 'lavorate' },
+              { label: 'Ellos', form: 'lavorano' }
             ]
           }
         ]
@@ -1119,14 +1791,47 @@ export const languageCatalog = {
         notes: 'En presente se omite; en pasado aparece.',
         tenses: [
           {
+            name: 'Presente (se omite)',
+            persons: [
+              { label: 'Yo', form: '—' },
+              { label: 'Tú', form: '—' },
+              { label: 'Él/Ella', form: '—' },
+              { label: 'Nosotros', form: '—' },
+              { label: 'Vosotros', form: '—' },
+              { label: 'Ellos/Ellas', form: '—' }
+            ]
+          },
+          {
             name: 'Pasado',
             persons: [
-              { label: 'Yo (m.)', form: 'был' },
-              { label: 'Yo (f.)', form: 'была' },
-              { label: 'Él', form: 'был' },
-              { label: 'Ella', form: 'была' },
+              { label: 'Yo', form: 'был/была' },
+              { label: 'Tú', form: 'был/была' },
+              { label: 'Él/Ella', form: 'был/была' },
               { label: 'Nosotros', form: 'были' },
-              { label: 'Ellos', form: 'были' }
+              { label: 'Vosotros', form: 'были' },
+              { label: 'Ellos/Ellas', form: 'были' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'буду' },
+              { label: 'Tú', form: 'будешь' },
+              { label: 'Él/Ella', form: 'будет' },
+              { label: 'Nosotros', form: 'будем' },
+              { label: 'Vosotros', form: 'будете' },
+              { label: 'Ellos/Ellas', form: 'будут' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'был бы/была бы' },
+              { label: 'Tú', form: 'был бы/была бы' },
+              { label: 'Él/Ella', form: 'был бы/была бы' },
+              { label: 'Nosotros', form: 'были бы' },
+              { label: 'Vosotros', form: 'были бы' },
+              { label: 'Ellos/Ellas', form: 'были бы' }
             ]
           }
         ]
@@ -1143,7 +1848,40 @@ export const languageCatalog = {
               { label: 'Él/Ella', form: 'идёт' },
               { label: 'Nosotros', form: 'идём' },
               { label: 'Vosotros', form: 'идёте' },
-              { label: 'Ellos', form: 'идут' }
+              { label: 'Ellos/Ellas', form: 'идут' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'шёл/шла' },
+              { label: 'Tú', form: 'шёл/шла' },
+              { label: 'Él/Ella', form: 'шёл/шла' },
+              { label: 'Nosotros', form: 'шли' },
+              { label: 'Vosotros', form: 'шли' },
+              { label: 'Ellos/Ellas', form: 'шли' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'буду идти' },
+              { label: 'Tú', form: 'будешь идти' },
+              { label: 'Él/Ella', form: 'будет идти' },
+              { label: 'Nosotros', form: 'будем идти' },
+              { label: 'Vosotros', form: 'будете идти' },
+              { label: 'Ellos/Ellas', form: 'будут идти' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'шёл бы/шла бы' },
+              { label: 'Tú', form: 'шёл бы/шла бы' },
+              { label: 'Él/Ella', form: 'шёл бы/шла бы' },
+              { label: 'Nosotros', form: 'шли бы' },
+              { label: 'Vosotros', form: 'шли бы' },
+              { label: 'Ellos/Ellas', form: 'шли бы' }
             ]
           }
         ]
@@ -1160,7 +1898,40 @@ export const languageCatalog = {
               { label: 'Él/Ella', form: 'говорит' },
               { label: 'Nosotros', form: 'говорим' },
               { label: 'Vosotros', form: 'говорите' },
-              { label: 'Ellos', form: 'говорят' }
+              { label: 'Ellos/Ellas', form: 'говорят' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'говорил/говорила' },
+              { label: 'Tú', form: 'говорил/говорила' },
+              { label: 'Él/Ella', form: 'говорил/говорила' },
+              { label: 'Nosotros', form: 'говорили' },
+              { label: 'Vosotros', form: 'говорили' },
+              { label: 'Ellos/Ellas', form: 'говорили' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'буду говорить' },
+              { label: 'Tú', form: 'будешь говорить' },
+              { label: 'Él/Ella', form: 'будет говорить' },
+              { label: 'Nosotros', form: 'будем говорить' },
+              { label: 'Vosotros', form: 'будете говорить' },
+              { label: 'Ellos/Ellas', form: 'будут говорить' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'говорил бы/говорила бы' },
+              { label: 'Tú', form: 'говорил бы/говорила бы' },
+              { label: 'Él/Ella', form: 'говорил бы/говорила бы' },
+              { label: 'Nosotros', form: 'говорили бы' },
+              { label: 'Vosotros', form: 'говорили бы' },
+              { label: 'Ellos/Ellas', form: 'говорили бы' }
             ]
           }
         ]
@@ -1177,7 +1948,244 @@ export const languageCatalog = {
               { label: 'Él/Ella', form: 'читает' },
               { label: 'Nosotros', form: 'читаем' },
               { label: 'Vosotros', form: 'читаете' },
-              { label: 'Ellos', form: 'читают' }
+              { label: 'Ellos/Ellas', form: 'читают' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'читал/читала' },
+              { label: 'Tú', form: 'читал/читала' },
+              { label: 'Él/Ella', form: 'читал/читала' },
+              { label: 'Nosotros', form: 'читали' },
+              { label: 'Vosotros', form: 'читали' },
+              { label: 'Ellos/Ellas', form: 'читали' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'буду читать' },
+              { label: 'Tú', form: 'будешь читать' },
+              { label: 'Él/Ella', form: 'будет читать' },
+              { label: 'Nosotros', form: 'будем читать' },
+              { label: 'Vosotros', form: 'будете читать' },
+              { label: 'Ellos/Ellas', form: 'будут читать' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'читал бы/читала бы' },
+              { label: 'Tú', form: 'читал бы/читала бы' },
+              { label: 'Él/Ella', form: 'читал бы/читала бы' },
+              { label: 'Nosotros', form: 'читали бы' },
+              { label: 'Vosotros', form: 'читали бы' },
+              { label: 'Ellos/Ellas', form: 'читали бы' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Делать (hacer)',
+        notes: 'Verbo básico de acción.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'делаю' },
+              { label: 'Tú', form: 'делаешь' },
+              { label: 'Él/Ella', form: 'делает' },
+              { label: 'Nosotros', form: 'делаем' },
+              { label: 'Vosotros', form: 'делаете' },
+              { label: 'Ellos/Ellas', form: 'делают' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Иметь (tener)',
+        notes: 'Posesión (menos frecuente que у меня есть).',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'имею' },
+              { label: 'Tú', form: 'имеешь' },
+              { label: 'Él/Ella', form: 'имеет' },
+              { label: 'Nosotros', form: 'имеем' },
+              { label: 'Vosotros', form: 'имеете' },
+              { label: 'Ellos/Ellas', form: 'имеют' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Хотеть (querer)',
+        notes: 'Deseo o intención.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'хочу' },
+              { label: 'Tú', form: 'хочешь' },
+              { label: 'Él/Ella', form: 'хочет' },
+              { label: 'Nosotros', form: 'хотим' },
+              { label: 'Vosotros', form: 'хотите' },
+              { label: 'Ellos/Ellas', form: 'хотят' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Мочь (poder)',
+        notes: 'Capacidad o posibilidad.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'могу' },
+              { label: 'Tú', form: 'можешь' },
+              { label: 'Él/Ella', form: 'может' },
+              { label: 'Nosotros', form: 'можем' },
+              { label: 'Vosotros', form: 'можете' },
+              { label: 'Ellos/Ellas', form: 'могут' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Знать (saber/conocer)',
+        notes: 'Conocimiento.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'знаю' },
+              { label: 'Tú', form: 'знаешь' },
+              { label: 'Él/Ella', form: 'знает' },
+              { label: 'Nosotros', form: 'знаем' },
+              { label: 'Vosotros', form: 'знаете' },
+              { label: 'Ellos/Ellas', form: 'знают' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Жить (vivir)',
+        notes: 'Lugar de residencia.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'живу' },
+              { label: 'Tú', form: 'живёшь' },
+              { label: 'Él/Ella', form: 'живёт' },
+              { label: 'Nosotros', form: 'живём' },
+              { label: 'Vosotros', form: 'живёте' },
+              { label: 'Ellos/Ellas', form: 'живут' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Работать (trabajar)',
+        notes: 'Actividad laboral.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'работаю' },
+              { label: 'Tú', form: 'работаешь' },
+              { label: 'Él/Ella', form: 'работает' },
+              { label: 'Nosotros', form: 'работаем' },
+              { label: 'Vosotros', form: 'работаете' },
+              { label: 'Ellos/Ellas', form: 'работают' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Учиться (estudiar)',
+        notes: 'Aprender o estudiar.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'учусь' },
+              { label: 'Tú', form: 'учишься' },
+              { label: 'Él/Ella', form: 'учится' },
+              { label: 'Nosotros', form: 'учимся' },
+              { label: 'Vosotros', form: 'учитесь' },
+              { label: 'Ellos/Ellas', form: 'учатся' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Видеть (ver)',
+        notes: 'Percepción visual.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'вижу' },
+              { label: 'Tú', form: 'видишь' },
+              { label: 'Él/Ella', form: 'видит' },
+              { label: 'Nosotros', form: 'видим' },
+              { label: 'Vosotros', form: 'видите' },
+              { label: 'Ellos/Ellas', form: 'видят' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Понимать (entender)',
+        notes: 'Comprensión.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'понимаю' },
+              { label: 'Tú', form: 'понимаешь' },
+              { label: 'Él/Ella', form: 'понимает' },
+              { label: 'Nosotros', form: 'понимаем' },
+              { label: 'Vosotros', form: 'понимаете' },
+              { label: 'Ellos/Ellas', form: 'понимают' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Писать (escribir)',
+        notes: 'Acción de escribir.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'пишу' },
+              { label: 'Tú', form: 'пишешь' },
+              { label: 'Él/Ella', form: 'пишет' },
+              { label: 'Nosotros', form: 'пишем' },
+              { label: 'Vosotros', form: 'пишете' },
+              { label: 'Ellos/Ellas', form: 'пишут' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Слушать (escuchar)',
+        notes: 'Percepción auditiva.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'слушаю' },
+              { label: 'Tú', form: 'слушаешь' },
+              { label: 'Él/Ella', form: 'слушает' },
+              { label: 'Nosotros', form: 'слушаем' },
+              { label: 'Vosotros', form: 'слушаете' },
+              { label: 'Ellos/Ellas', form: 'слушают' }
             ]
           }
         ]
