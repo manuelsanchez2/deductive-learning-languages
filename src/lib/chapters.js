@@ -476,6 +476,7 @@ export const languageCatalog = {
           'Presente: sóc / estic.',
         summary:
           'Sóc professor i visc a prop del centre. Avui estic a casa perquè estic cansat, però estic tranquil. Normalment sóc actiu, però avui prefereixo descansar.',
+        summaryTranslation: 'Soy profesor y vivo cerca del centro. Hoy estoy en casa porque estoy cansado, pero estoy tranquilo. Normalmente soy activo, pero hoy prefiero descansar.',
         vocab: [
           { term: 'cansat', translation: 'cansado' },
           { term: 'tranquil', translation: 'tranquilo' },
@@ -509,6 +510,7 @@ export const languageCatalog = {
           'd’en + nombre expresa posesión natural o pertenencia.',
         summary:
           'El meu pis és petit però és meu. La casa d’en Marc és gran i està lluny. Aquest barri m’agrada molt.',
+        summaryTranslation: 'Mi piso es pequeño pero es mío. La casa de Marc es grande y está lejos. Este barrio me gusta mucho.',
         vocab: [
           { term: 'pis', translation: 'piso' },
           { term: 'barri', translation: 'barrio' },
@@ -533,6 +535,7 @@ export const languageCatalog = {
           'Formas clave: vaig, vas, va, vam, vau, van.',
         summary:
           'Ahir vaig sortir amb uns amics. Vam sopar junts i després vam parlar fins tard. Va ser un dia tranquil.',
+        summaryTranslation: 'Ayer salí con unos amigos. Cenamos juntos y luego hablamos hasta tarde. Fue un día tranquilo.',
         vocab: [
           { term: 'ahir', translation: 'ayer' },
           { term: 'sortir', translation: 'salir' },
@@ -556,6 +559,7 @@ export const languageCatalog = {
           'El pronombre marca la relación aunque el sintagma aparezca explícito.',
         summary:
           'El meu amic no hi era ahir, però li vaig escriure un missatge. El problema el vam resoldre junts.',
+        summaryTranslation: 'Mi amigo no estaba ayer, pero le escribí un mensaje. El problema lo resolvimos juntos.',
         vocab: [
           { term: 'escriure', translation: 'escribir' },
           { term: 'missatge', translation: 'mensaje' },
@@ -578,6 +582,7 @@ export const languageCatalog = {
           'En combinaciones, la secuencia es estable y debe interiorizarse.',
         summary:
           'El llibre nou me’l vaig comprar ahir. Me’l vaig llegir ràpid perquè m’agradava molt.',
+        summaryTranslation: 'El libro nuevo me lo compré ayer. Me lo leí rápido porque me gustaba mucho.',
         vocab: [
           { term: 'llegir', translation: 'leer' },
           { term: 'ràpid', translation: 'rápido' }
@@ -599,6 +604,7 @@ export const languageCatalog = {
           'cap a expresa dirección abierta, no un punto exacto.',
         summary:
           'Demà vinc a casa teva. Després anirem cap al centre a fer un cafè.',
+        summaryTranslation: 'Mañana voy a tu casa. Después iremos hacia el centro a tomar un café.',
         vocab: [
           { term: 'demà', translation: 'mañana' },
           { term: 'centre', translation: 'centro' },
@@ -621,6 +627,7 @@ export const languageCatalog = {
           'hi és expresa localización de algo conocido.',
         summary:
           'En aquest barri hi ha molts bars. El meu preferit hi és a prop de casa.',
+        summaryTranslation: 'En este barrio hay muchos bares. Mi favorito está cerca de casa.',
         vocab: [
           { term: 'gent', translation: 'gente' },
           { term: 'a prop', translation: 'cerca' }
@@ -642,6 +649,7 @@ export const languageCatalog = {
           'El catalán mantiene el pronombre como requisito estructural.',
         summary:
           'M’agrada el cafè fort, però no m’agraden gaire els dolços. Al meu amic li agrada molt cuinar.',
+        summaryTranslation: 'Me gusta el café fuerte, pero no me gustan mucho los dulces. A mi amigo le gusta mucho cocinar.',
         vocab: [
           { term: 'fort', translation: 'fuerte' },
           { term: 'dolços', translation: 'dulces' },
@@ -664,6 +672,7 @@ export const languageCatalog = {
           'Formas: vingui / vinguis, entre otras.',
         summary:
           'Vull que vinguis demà si pots. És important que parlem amb calma.',
+        summaryTranslation: 'Quiero que vengas mañana si puedes. Es importante que hablemos con calma.',
         vocab: [
           { term: 'poder', translation: 'poder' },
           { term: 'important', translation: 'importante' },
@@ -686,6 +695,7 @@ export const languageCatalog = {
           'tot i que introduce una concesión; en canvi marca contraste.',
         summary:
           'Tot i que feia fred, vam sortir. En canvi, altres persones es van quedar a casa.',
+        summaryTranslation: 'Aunque hacía frío, salimos. En cambio, otras personas se quedaron en casa.',
         vocab: [
           { term: 'tot i que', translation: 'aunque' },
           { term: 'en canvi', translation: 'en cambio' },
@@ -708,6 +718,7 @@ export const languageCatalog = {
           'no cal expresa necesidad (o su ausencia). em fa cosa expresa reparo o incomodidad.',
         summary:
           'Avui no cal que vinguis. Em fa cosa sortir perquè estic cansat. Ja ho parlarem un altre dia.',
+        summaryTranslation: 'Hoy no hace falta que vengas. Me da cosa salir porque estoy cansado. Ya lo hablaremos otro día.',
         vocab: [
           { term: 'no cal', translation: 'no hace falta' },
           { term: 'un altre dia', translation: 'otro día' }
@@ -729,6 +740,7 @@ export const languageCatalog = {
           'Las rutinas se expresan de forma directa, sin perífrasis adicionales.',
         summary:
           'Em llevo aviat, treballo tot el dia i al vespre descanso una mica.',
+        summaryTranslation: 'Me levanto temprano, trabajo todo el día y por la tarde-noche descanso un poco.',
         vocab: [
           { term: 'llevar-se', translation: 'levantarse' },
           { term: 'vespre', translation: 'tarde-noche' },
@@ -751,6 +763,7 @@ export const languageCatalog = {
           'Su posición suele ser flexible, pero se integran cerca del verbo.',
         summary:
           'Normalment treballo a casa. A vegades vaig a l’oficina, però no sovint.',
+        summaryTranslation: 'Normalmente trabajo en casa. A veces voy a la oficina, pero no a menudo.',
         vocab: [
           { term: 'sempre', translation: 'siempre' },
           { term: 'sovint', translation: 'a menudo' },
@@ -773,6 +786,7 @@ export const languageCatalog = {
           'El futuro simple es directo; vull + infinitiu expresa deseo o plan.',
         summary:
           'Aquest cap de setmana aniré a Barcelona. Vull visitar la ciutat amb calma.',
+        summaryTranslation: 'Este fin de semana iré a Barcelona. Quiero visitar la ciudad con calma.',
         vocab: [
           { term: 'cap de setmana', translation: 'fin de semana' },
           { term: 'visitar', translation: 'visitar' },
@@ -795,6 +809,7 @@ export const languageCatalog = {
           'La estructura es compacta y sin inversiones artificiales.',
         summary:
           'Visc a prop del centre. Treballo des de casa i estudio català.',
+        summaryTranslation: 'Vivo cerca del centro. Trabajo desde casa y estudio catalán.',
         vocab: [
           { term: 'on', translation: 'dónde' },
           { term: 'què', translation: 'qué' },
@@ -817,6 +832,7 @@ export const languageCatalog = {
           'Expresiones de necesidad: tinc gana / tinc set.',
         summary:
           'Tinc gana i voldria un cafè amb llet. Després menjarem alguna cosa.',
+        summaryTranslation: 'Tengo hambre y quisiera un café con leche. Después comeremos algo.',
         vocab: [
           { term: 'gana', translation: 'hambre' },
           { term: 'set', translation: 'sed' },
@@ -845,6 +861,7 @@ export const languageCatalog = {
           'que és general; qui s’usa amb persones després de preposició.',
         summary:
           'Vaig parlar amb una noia que treballa a la ràdio i em va recomanar un llibre.',
+        summaryTranslation: 'Hablé con una chica que trabaja en la radio y me recomendó un libro.',
         vocab: [
           { term: 'relatiu', translation: 'relativo' },
           { term: 'qui', translation: 'quien' },
@@ -873,6 +890,7 @@ export const languageCatalog = {
           'Expressa desig, suggeriment o valoració.',
         summary:
           'Et recomano que descansis una mica i que demà hi vagis amb més calma.',
+        summaryTranslation: 'Te recomiendo que descanses un poco y que mañana vayas con más calma.',
         vocab: [
           { term: 'recomanar', translation: 'recomendar' },
           { term: 'millor', translation: 'mejor' },
@@ -901,6 +919,7 @@ export const languageCatalog = {
           'Són molt freqüents en llengua parlada.',
         summary:
           'He de sortir ara, però no cal que vinguis fins més tard.',
+        summaryTranslation: 'Tengo que salir ahora, pero no hace falta que vengas hasta más tarde.',
         vocab: [
           { term: 'haver de', translation: 'tener que' },
           { term: 'fins més tard', translation: 'hasta más tarde' }
@@ -930,6 +949,7 @@ export const languageCatalog = {
           'Ubicació: al costat de, davant de, a prop de.',
         summary:
           'L’estació és a prop. Gira a l’esquerra i continua fins al pont.',
+        summaryTranslation: 'La estación está cerca. Gira a la izquierda y sigue hasta el puente.',
         vocab: [
           { term: 'gira', translation: 'gira' },
           { term: 'segueix recte', translation: 'sigue recto' },
@@ -960,6 +980,7 @@ export const languageCatalog = {
           'surt indica la salida del vuelo.',
         summary:
           'El meu vol surt a les nou. Necessito trobar la porta d’embarcament i deixar l’equipatge.',
+        summaryTranslation: 'Mi vuelo sale a las nueve. Necesito encontrar la puerta de embarque y dejar el equipaje.',
         vocab: [
           { term: 'vol', translation: 'vuelo' },
           { term: 'porta d’embarcament', translation: 'puerta de embarque' },
@@ -988,6 +1009,7 @@ export const languageCatalog = {
           'L’imperatiu dona ordres o instruccions: escolta, no facis.',
         summary:
           'Parlem en present, expliquem el passat i planifiquem el futur amb formes diferents.',
+        summaryTranslation: 'Hablamos en presente, explicamos el pasado y planificamos el futuro con formas diferentes.',
         vocab: [
           { term: 'passat', translation: 'pasado' },
           { term: 'futur', translation: 'futuro' },
@@ -1471,6 +1493,7 @@ export const languageCatalog = {
           'Presente: sono.',
         summary:
           'Sono professore e vivo vicino al centro. Oggi sono a casa perché sono stanco, ma sono tranquillo.',
+        summaryTranslation: 'Soy profesor y vivo cerca del centro. Hoy estoy en casa porque estoy cansado, pero estoy tranquilo.',
         vocab: [
           { term: 'stanco', translation: 'cansado' },
           { term: 'tranquillo', translation: 'tranquilo' },
@@ -1499,6 +1522,7 @@ export const languageCatalog = {
           'di + nombre expresa pertenencia directa.',
         summary:
           'Il mio appartamento è piccolo ma è mio. La casa di Marco è grande e lontana.',
+        summaryTranslation: 'Mi apartamento es pequeño pero es mío. La casa de Marco es grande y está lejos.',
         vocab: [
           { term: 'appartamento', translation: 'piso' },
           { term: 'piccolo', translation: 'pequeño' },
@@ -1523,6 +1547,7 @@ export const languageCatalog = {
           'Personas: sono, sei, è, siamo, siete, sono / ho, hai, ha, abbiamo, avete, hanno.',
         summary:
           'Ieri sono uscito con amici. Abbiamo cenato insieme e poi abbiamo parlato fino a tardi.',
+        summaryTranslation: 'Ayer salí con amigos. Cenamos juntos y luego hablamos hasta tarde.',
         vocab: [
           { term: 'ieri', translation: 'ayer' },
           { term: 'uscire', translation: 'salir' },
@@ -1546,6 +1571,7 @@ export const languageCatalog = {
           'piace concuerda con singular, piacciono con plural.',
         summary:
           'Mi piace il caffè forte, ma non mi piacciono i dolci. Al mio amico piace cucinare.',
+        summaryTranslation: 'Me gusta el café fuerte, pero no me gustan los dulces. A mi amigo le gusta cocinar.',
         vocab: [
           { term: 'piace', translation: 'gusta (singular)' },
           { term: 'piacciono', translation: 'gustan (plural)' },
@@ -1569,6 +1595,7 @@ export const languageCatalog = {
           'El passato prossimo expresa un evento puntual o concluido.',
         summary:
           'Da piccolo studiavo musica, ma ieri ho studiato per l’esame tutto il giorno.',
+        summaryTranslation: 'De pequeño estudiaba música, pero ayer estudié para el examen todo el día.',
         vocab: [
           { term: 'da piccolo', translation: 'de pequeño' },
           { term: 'studiavo', translation: 'estudiaba' },
@@ -1592,6 +1619,7 @@ export const languageCatalog = {
           'Se usa para enfatizar progresión: sto leggendo.',
         summary:
           'Adesso sto leggendo un libro, e stiamo lavorando insieme al progetto.',
+        summaryTranslation: 'Ahora estoy leyendo un libro y estamos trabajando juntos en el proyecto.',
         vocab: [
           { term: 'sto leggendo', translation: 'estoy leyendo' },
           { term: 'adesso', translation: 'ahora' },
@@ -1615,6 +1643,7 @@ export const languageCatalog = {
           'La intención se puede expresar con voglio + infinitivo.',
         summary:
           'Domani partirò per Roma. Voglio viaggiare con calma.',
+        summaryTranslation: 'Mañana partiré hacia Roma. Quiero viajar con calma.',
         vocab: [
           { term: 'partire', translation: 'partir' },
           { term: 'presto', translation: 'pronto' },
@@ -1638,6 +1667,7 @@ export const languageCatalog = {
           'potere = posibilidad, dovere = obligación, volere = deseo.',
         summary:
           'Oggi devo studiare, ma voglio un caffè. Dopo posso uscire.',
+        summaryTranslation: 'Hoy debo estudiar, pero quiero un café. Después puedo salir.',
         vocab: [
           { term: 'posso', translation: 'puedo' },
           { term: 'devo', translation: 'debo' },
@@ -1661,6 +1691,7 @@ export const languageCatalog = {
           'ne retoma cantidad o \"de + sustantivo\".',
         summary:
           'Ci vado domani e ne voglio due, per favore.',
+        summaryTranslation: 'Voy allí mañana y quiero dos, por favor.',
         vocab: [
           { term: 'ci', translation: 'allí / a ello' },
           { term: 'ne', translation: 'de ello / de ellos' },
@@ -1684,6 +1715,7 @@ export const languageCatalog = {
           'Refuerza la negación sin cambiar el sentido.',
         summary:
           'Non vedo nessuno oggi e non ho mai tempo libero.',
+        summaryTranslation: 'No veo a nadie hoy y no tengo nunca tiempo libre.',
         vocab: [
           { term: 'nessuno', translation: 'nadie' },
           { term: 'mai', translation: 'nunca' },
@@ -1706,6 +1738,7 @@ export const languageCatalog = {
           'La estructura suele ser simple y directa.',
         summary:
           'Vivo vicino al centro. Lavoro da casa e studio italiano.',
+        summaryTranslation: 'Vivo cerca del centro. Trabajo desde casa y estudio italiano.',
         vocab: [
           { term: 'dove', translation: 'dónde' },
           { term: 'che cosa', translation: 'qué' },
@@ -1729,6 +1762,7 @@ export const languageCatalog = {
           'La hora se expresa con \"alle\" + número.',
         summary:
           'Mi sveglio presto, lavoro tutto il giorno e la sera riposo.',
+        summaryTranslation: 'Me despierto temprano, trabajo todo el día y por la noche descanso.',
         vocab: [
           { term: 'mi sveglio', translation: 'me despierto' },
           { term: 'presto', translation: 'temprano' },
@@ -1752,6 +1786,7 @@ export const languageCatalog = {
           'invece marca contraste o alternativa.',
         summary:
           'Anche se piove, usciamo. Invece altri restano a casa.',
+        summaryTranslation: 'Aunque llueve, salimos. En cambio otros se quedan en casa.',
         vocab: [
           { term: 'anche se', translation: 'aunque' },
           { term: 'invece', translation: 'en cambio' },
@@ -1774,6 +1809,7 @@ export const languageCatalog = {
           'puoi + infinitivo formula petición directa.',
         summary:
           'Vorrei un caffè e, per favore, puoi aiutarmi un momento?',
+        summaryTranslation: 'Quisiera un café y, por favor, ¿puedes ayudarme un momento?',
         vocab: [
           { term: 'vorrei', translation: 'quisiera' },
           { term: 'per favore', translation: 'por favor' },
@@ -1802,6 +1838,7 @@ export const languageCatalog = {
           'che es general; cui se usa tras preposición.',
         summary:
           'Ho parlato con una persona che lavora alla radio e mi ha consigliato un libro.',
+        summaryTranslation: 'Hablé con una persona que trabaja en la radio y me recomendó un libro.',
         vocab: [
           { term: 'relativo', translation: 'relativo' },
           { term: 'cui', translation: 'quien/cual' },
@@ -1830,6 +1867,7 @@ export const languageCatalog = {
           'Expresa duda, valoración o deseo.',
         summary:
           'Penso che tu abbia ragione e che venga presto per parlarne con calma.',
+        summaryTranslation: 'Creo que tienes razón y que vengas pronto para hablarlo con calma.',
         vocab: [
           { term: 'abbia', translation: 'tenga (subj.)' },
           { term: 'meglio', translation: 'mejor' },
@@ -1858,6 +1896,7 @@ export const languageCatalog = {
           'Ambas son formas frecuentes en conversación.',
         summary:
           'Devo uscire ora, ma non serve che tu venga fino a più tardi.',
+        summaryTranslation: 'Tengo que salir ahora, pero no hace falta que vengas hasta más tarde.',
         vocab: [
           { term: 'devo', translation: 'debo' },
           { term: 'non serve', translation: 'no hace falta' },
@@ -1888,6 +1927,7 @@ export const languageCatalog = {
           'Ubicación: accanto a, davanti a, vicino a.',
         summary:
           'La stazione è vicina. Gira a sinistra e continua fino al ponte.',
+        summaryTranslation: 'La estación está cerca. Gira a la izquierda y continúa hasta el puente.',
         vocab: [
           { term: 'gira', translation: 'gira' },
           { term: 'vai dritto', translation: 've recto' },
@@ -1918,6 +1958,7 @@ export const languageCatalog = {
           'parte indica salida del vuelo.',
         summary:
           'Il mio volo parte alle nove. Devo trovare il gate e lasciare il bagaglio.',
+        summaryTranslation: 'Mi vuelo sale a las nueve. Debo encontrar la puerta de embarque y dejar el equipaje.',
         vocab: [
           { term: 'volo', translation: 'vuelo' },
           { term: 'gate', translation: 'puerta de embarque' },
@@ -1946,6 +1987,7 @@ export const languageCatalog = {
           'L’imperativo da órdenes: ascolta, non parlare.',
         summary:
           'Usiamo tempi diversi per raccontare el pasado y planificar el futuro.',
+        summaryTranslation: 'Usamos tiempos diferentes para contar el pasado y planificar el futuro.',
         vocab: [
           { term: 'tempo verbale', translation: 'tiempo verbal' },
           { term: 'futuro', translation: 'futuro' },
@@ -2417,6 +2459,7 @@ export const languageCatalog = {
           'En ruso, el verbo “ser” (быть) suele omitirse en presente: “Я студент”.\n\n' +
           'La relación se entiende por contexto y orden de palabras.',
         summary: 'Я студент и живу рядом с центром. Сегодня я дома и спокоен.',
+        summaryTranslation: 'Soy estudiante y vivo cerca del centro. Hoy estoy en casa y estoy tranquilo.',
         vocab: [
           { term: 'студент', translation: 'estudiante' },
           { term: 'дома', translation: 'en casa' },
@@ -2439,6 +2482,7 @@ export const languageCatalog = {
           'El ruso usa “у + genitivo + есть” para expresar posesión.\n\n' +
           'Literalmente: “En mí hay…”, con enfoque en la existencia.',
         summary: 'У меня есть маленькая квартира, а у Марка есть дом.',
+        summaryTranslation: 'Tengo un apartamento pequeño y Marc tiene una casa.',
         vocab: [
           { term: 'у меня есть', translation: 'tengo' },
           { term: 'книга', translation: 'libro' },
@@ -2460,6 +2504,7 @@ export const languageCatalog = {
           'идти expresa movimiento en curso o puntual; ходить expresa hábito o repetición.\n\n' +
           'La dirección se marca con formas como “домой”.',
         summary: 'Сейчас я иду домой, но обычно хожу в кафе вечером.',
+        summaryTranslation: 'Ahora voy a casa, pero normalmente voy al café por la tarde.',
         vocab: [
           { term: 'идти', translation: 'ir (en curso)' },
           { term: 'ходить', translation: 'ir (habitual)' },
@@ -2482,6 +2527,7 @@ export const languageCatalog = {
           'Con “нравиться”, lo que gusta es el sujeto; la persona va en dativo.\n\n' +
           'нравится con singular, нравятся con plural.',
         summary: 'Мне нравится кофе, но мне не нравятся сладости.',
+        summaryTranslation: 'Me gusta el café, pero no me gustan los dulces.',
         vocab: [
           { term: 'нравится', translation: 'gusta (singular)' },
           { term: 'нравятся', translation: 'gustan (plural)' },
@@ -2504,6 +2550,7 @@ export const languageCatalog = {
           'En pasado, “быть” aparece como был/была/было/были.\n\n' +
           'El pasado marca género y número.',
         summary: 'Вчера я был дома, а она была спокойна.',
+        summaryTranslation: 'Ayer estuve en casa y ella estaba tranquila.',
         vocab: [
           { term: 'вчера', translation: 'ayer' },
           { term: 'был', translation: 'estuve (masc.)' },
@@ -2525,6 +2572,7 @@ export const languageCatalog = {
           'El aspecto imperfectivo describe proceso: читать.\n\n' +
           'El perfectivo marca completitud: прочитать.',
         summary: 'Сейчас я читаю книгу, а вчера я прочитал другую.',
+        summaryTranslation: 'Ahora estoy leyendo un libro, y ayer terminé otro.',
         vocab: [
           { term: 'читать', translation: 'leer (proceso)' },
           { term: 'прочитать', translation: 'leer (terminado)' },
@@ -2547,6 +2595,7 @@ export const languageCatalog = {
           'El futuro imperfectivo se forma con быть + infinitivo.\n\n' +
           'буду, будешь, будет, будем, будете, будут.',
         summary: 'Завтра я буду работать, а вечером мы будем говорить.',
+        summaryTranslation: 'Mañana trabajaré y por la tarde hablaremos.',
         vocab: [
           { term: 'буду', translation: 'seré/estaré (futuro)' },
           { term: 'работать', translation: 'trabajar' },
@@ -2568,6 +2617,7 @@ export const languageCatalog = {
           'La doble negación es obligatoria: не + никто/ничего.\n\n' +
           'En posesión negativa: нет + genitivo.',
         summary: 'Я никого не вижу и у меня нет времени.',
+        summaryTranslation: 'No veo a nadie y no tengo tiempo.',
         vocab: [
           { term: 'никого', translation: 'a nadie' },
           { term: 'не', translation: 'no' },
@@ -2590,6 +2640,7 @@ export const languageCatalog = {
           'Con movimiento hacia destino se usa acusativo.\n\n' +
           'в para interiores; на para superficies o actividades.',
         summary: 'Сейчас я иду в магазин, а потом мы едем на работу.',
+        summaryTranslation: 'Ahora voy a la tienda y luego vamos al trabajo.',
         vocab: [
           { term: 'в', translation: 'a (interior)' },
           { term: 'на', translation: 'a (superficie/actividad)' },
@@ -2612,6 +2663,7 @@ export const languageCatalog = {
           'Los verbos reflexivos usan -ся: встаю.\n\n' +
           'La hora se expresa con “в” + numeral.',
         summary: 'Я встаю рано, работаю весь день и вечером отдыхаю.',
+        summaryTranslation: 'Me levanto temprano, trabajo todo el día y por la tarde descanso.',
         vocab: [
           { term: 'встаю', translation: 'me levanto' },
           { term: 'в семь', translation: 'a las siete' },
@@ -2634,6 +2686,7 @@ export const languageCatalog = {
           'Preguntas directas con где / что.\n\n' +
           'La estructura es simple y el contexto ayuda.',
         summary: 'Я живу рядом с центром. Я работаю и учу русский.',
+        summaryTranslation: 'Vivo cerca del centro. Trabajo y estudio ruso.',
         vocab: [
           { term: 'где', translation: 'dónde' },
           { term: 'что', translation: 'qué' },
@@ -2656,6 +2709,7 @@ export const languageCatalog = {
           'Можно introduce peticiones suaves, equivalente a “se puede”.\n\n' +
           'Вы es forma de cortesía o plural.',
         summary: 'Можно кофе, пожалуйста? Вы можете помочь мне на минуту?',
+        summaryTranslation: '¿Se puede un café, por favor? ¿Puede ayudarme un minuto?',
         vocab: [
           { term: 'можно', translation: 'se puede / puedo' },
           { term: 'пожалуйста', translation: 'por favor' },
@@ -2677,6 +2731,7 @@ export const languageCatalog = {
           'хотя introduce concesión.\n\n' +
           'а contrasta o introduce alternativa.',
         summary: 'Хотя идёт дождь, мы идём. А другие остаются дома.',
+        summaryTranslation: 'Aunque llueve, vamos. Y otros se quedan en casa.',
         vocab: [
           { term: 'хотя', translation: 'aunque' },
           { term: 'идёт дождь', translation: 'llueve' },
@@ -2698,6 +2753,7 @@ export const languageCatalog = {
           'нужно expresa necesidad impersonal.\n\n' +
           'La posesión cotidiana usa у нас есть.',
         summary: 'Мне нужно два билета, и у нас есть три книги.',
+        summaryTranslation: 'Necesito dos entradas y tenemos tres libros.',
         vocab: [
           { term: 'нужно', translation: 'necesito / hace falta' },
           { term: 'два', translation: 'dos' },
@@ -2727,6 +2783,7 @@ export const languageCatalog = {
           'Con preposición: с которой, у которого, etc.',
         summary:
           'Это книга, которую я купил вчера, и девушка, с которой я говорил.',
+        summaryTranslation: 'Este es el libro que compré ayer y la chica con la que hablé.',
         vocab: [
           { term: 'который', translation: 'que/el cual' },
           { term: 'с которой', translation: 'con la que' },
@@ -2755,6 +2812,7 @@ export const languageCatalog = {
           'Expresa posibilidad o hipótesis.',
         summary:
           'Я бы пришёл, если бы было время, но сегодня не могу.',
+        summaryTranslation: 'Vendría si hubiera tiempo, pero hoy no puedo.',
         vocab: [
           { term: 'бы', translation: 'partícula condicional' },
           { term: 'пришёл', translation: 'vendría (masc.)' },
@@ -2783,6 +2841,7 @@ export const languageCatalog = {
           'El imperfectivo marca proceso: читать.',
         summary:
           'Сегодня я хочу прочитать главу, а вечером буду читать ещё немного.',
+        summaryTranslation: 'Hoy quiero terminar un capítulo y por la tarde leeré un poco más.',
         vocab: [
           { term: 'прочитать', translation: 'leer (terminar)' },
           { term: 'читать', translation: 'leer (proceso)' },
@@ -2813,6 +2872,7 @@ export const languageCatalog = {
           'Ubicación: рядом с, напротив, слева от.',
         summary:
           'Вокзал рядом. Поверните налево и идите до моста.',
+        summaryTranslation: 'La estación está cerca. Gire a la izquierda y vaya hasta el puente.',
         vocab: [
           { term: 'поверните', translation: 'gire' },
           { term: 'идите прямо', translation: 'vaya recto' },
@@ -2843,6 +2903,7 @@ export const languageCatalog = {
           'вылетает indica salida del vuelo.',
         summary:
           'Мой рейс вылетает в девять. Мне нужно найти выход на посадку и сдать багаж.',
+        summaryTranslation: 'Mi vuelo sale a las nueve. Necesito encontrar la puerta de embarque y dejar el equipaje.',
         vocab: [
           { term: 'рейс', translation: 'vuelo' },
           { term: 'посадка', translation: 'embarque' },
@@ -2871,6 +2932,7 @@ export const languageCatalog = {
           'El imperativo se forma con la raíz: слушай, не говори.',
         summary:
           'En ruso, tiempo y aspecto se combinan para dar precisión.',
+        summaryTranslation: 'En ruso, tiempo y aspecto se combinan para dar precisión.',
         vocab: [
           { term: 'вчера', translation: 'ayer' },
           { term: 'завтра', translation: 'mañana' },
@@ -3589,6 +3651,7 @@ export const languageCatalog = {
           'El contexto determina el matiz.',
         summary:
           'Ég er kennari og bý nálægt miðbænum. Í dag er ég heima og er rólegur.',
+        summaryTranslation: 'Soy profesor y vivo cerca del centro. Hoy estoy en casa y estoy tranquilo.',
         vocab: [
           { term: 'þreyttur', translation: 'cansado' },
           { term: 'kennari', translation: 'profesor' },
@@ -3611,6 +3674,7 @@ export const languageCatalog = {
           'La estructura es sujeto + verbo + objeto.',
         summary:
           'Ég hef litla íbúð og hún hefur stórt hús.',
+        summaryTranslation: 'Tengo un piso pequeño y ella tiene una casa grande.',
         vocab: [
           { term: 'bók', translation: 'libro' },
           { term: 'hús', translation: 'casa' },
@@ -3633,6 +3697,7 @@ export const languageCatalog = {
           'El sujeto es lo que gusta.',
         summary:
           'Mér líkar sterkt kaffi, en mér líkar ekki sælgæti.',
+        summaryTranslation: 'Me gusta el café fuerte, pero no me gustan los dulces.',
         vocab: [
           { term: 'líkar', translation: 'gusta' },
           { term: 'kaffi', translation: 'café' },
@@ -3654,6 +3719,7 @@ export const languageCatalog = {
           'Algunos verbos son irregulares.',
         summary:
           'Í gær fór ég í bíó og við töluðum lengi eftir á.',
+        summaryTranslation: 'Ayer fui al cine y hablamos mucho después.',
         vocab: [
           { term: 'í gær', translation: 'ayer' },
           { term: 'fór', translation: 'fui' },
@@ -3675,6 +3741,7 @@ export const languageCatalog = {
           'Se usa de forma general.',
         summary:
           'Ég talaði við konu sem vinnur á útvarpi og hún mælti með bók.',
+        summaryTranslation: 'Hablé con una mujer que trabaja en la radio y me recomendó un libro.',
         vocab: [
           { term: 'sem', translation: 'que' },
           { term: 'blaðamaður', translation: 'periodista' },
@@ -3697,6 +3764,7 @@ export const languageCatalog = {
           'allan daginn indica duración total.',
         summary:
           'Ég vakna snemma, vinn allan daginn og hvíli mig á kvöldin.',
+        summaryTranslation: 'Me despierto temprano, trabajo todo el día y descanso por las noches.',
         vocab: [
           { term: 'klukkan', translation: 'a las (hora)' },
           { term: 'allan daginn', translation: 'todo el día' },
@@ -3718,6 +3786,7 @@ export const languageCatalog = {
           'El verbo suele ir en segunda posición.',
         summary:
           'Ég bý nálægt miðbænum. Ég vinn heima og læri íslensku.',
+        summaryTranslation: 'Vivo cerca del centro. Trabajo en casa y estudio islandés.',
         vocab: [
           { term: 'hvar', translation: 'dónde' },
           { term: 'hvað', translation: 'qué' },
@@ -3739,6 +3808,7 @@ export const languageCatalog = {
           'Es la forma más común en registro neutro.',
         summary:
           'Ég mun fara á morgun og við munum tala síðar í símanum.',
+        summaryTranslation: 'Iré mañana y hablaremos más tarde por teléfono.',
         vocab: [
           { term: 'á morgun', translation: 'mañana' },
           { term: 'síðar', translation: 'más tarde' },
@@ -3760,6 +3830,7 @@ export const languageCatalog = {
           'Se usa para hipótesis o cortesía.',
         summary:
           'Ég myndi fara með þér ef ég hefði tíma, en í dag get ég það ekki.',
+        summaryTranslation: 'Iría contigo si tuviera tiempo, pero hoy no puedo.',
         vocab: [
           { term: 'myndi', translation: 'condicional' },
           { term: 'ef', translation: 'si' },
@@ -3781,6 +3852,7 @@ export const languageCatalog = {
           'Muchos verbos cambian la raíz.',
         summary:
           'Í gær las ég bók og við skrifuðum bréf til vinar.',
+        summaryTranslation: 'Ayer leí un libro y escribimos una carta a un amigo.',
         vocab: [
           { term: 'las', translation: 'leí' },
           { term: 'bréf', translation: 'carta' },
@@ -3802,6 +3874,7 @@ export const languageCatalog = {
           'en marca contraste.',
         summary:
           'Þótt það rigndi, fórum við út. En aðrir voru heima og hvíldu sig.',
+        summaryTranslation: 'Aunque llovía, salimos. En cambio otros estaban en casa y descansaron.',
         vocab: [
           { term: 'þótt', translation: 'aunque' },
           { term: 'en', translation: 'pero/en cambio' },
@@ -3823,6 +3896,7 @@ export const languageCatalog = {
           'það þarf ekki indica falta de necesidad.',
         summary:
           'Ég þarf að fara núna, en það þarf ekki að koma fyrr en síðar.',
+        summaryTranslation: 'Tengo que irme ahora, pero no hace falta que vengas hasta más tarde.',
         vocab: [
           { term: 'þurfa', translation: 'necesitar/tener que' },
           { term: 'ekki', translation: 'no' },
@@ -3853,6 +3927,7 @@ export const languageCatalog = {
           'Ubicación: við hliðina á, fyrir framan, nálægt.',
         summary:
           'Lestarstöðin er nálægt. Beygðu til vinstri og haltu áfram.',
+        summaryTranslation: 'La estación está cerca. Gira a la izquierda y sigue adelante.',
         vocab: [
           { term: 'beygðu', translation: 'gira' },
           { term: 'beint áfram', translation: 'recto' },
@@ -3883,6 +3958,7 @@ export const languageCatalog = {
           'fer klukkan indica la hora de salida.',
         summary:
           'Flugið mitt fer klukkan níu. Ég þarf að finna brottfararhlið og skila farangri.',
+        summaryTranslation: 'Mi vuelo sale a las nueve. Necesito encontrar la puerta de embarque y entregar el equipaje.',
         vocab: [
           { term: 'flug', translation: 'vuelo' },
           { term: 'brottfararhlið', translation: 'puerta de embarque' },
@@ -3911,6 +3987,7 @@ export const languageCatalog = {
           'El imperativo (boðháttur) da instrucciones: hlustaðu, ekki tala.',
         summary:
           'Íslenska notar tímamerki og boðhátt til að vera nákvæm.',
+        summaryTranslation: 'El islandés usa marcas de tiempo e imperativo para ser preciso.',
         vocab: [
           { term: 'tími', translation: 'tiempo' },
           { term: 'boðháttur', translation: 'imperativo' },

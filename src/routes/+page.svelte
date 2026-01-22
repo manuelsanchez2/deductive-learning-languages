@@ -8,6 +8,7 @@
   let openChapters = []
   let showTranslations = []
   let showTextTranslations = []
+  let showVocabTranslations = []
   let tenseFilter = "Presente"
   let verbQuery = ""
   let voices = []
@@ -26,6 +27,7 @@
       chapterTitle: chapter.title,
       chapterNumber: chapter.number,
       summary: chapter.summary,
+      summaryTranslation: chapter.summaryTranslation,
     }))
   )
   $: verbs = languageData?.verbs ?? []
@@ -149,6 +151,12 @@
       : [...showTextTranslations, id]
   }
 
+  const toggleVocabTranslations = (id) => {
+    showVocabTranslations = showVocabTranslations.includes(id)
+      ? showVocabTranslations.filter((vocabId) => vocabId !== id)
+      : [...showVocabTranslations, id]
+  }
+
   const summarySnippet = (text) => {
     if (!text) return ""
     const [first] = text.split(". ")
@@ -162,6 +170,7 @@
     openChapters = loadStoredList(`openChapters-${language}`)
     showTranslations = []
     showTextTranslations = []
+    showVocabTranslations = []
     tenseFilter = "Presente"
     verbQuery = ""
     persistList("selectedLanguage", language)
@@ -379,7 +388,7 @@
         </p>
       </div>
       <div class="vocab-grid">
-        {#each vocabulary as item}
+        {#each vocabulary as item, index}
           <article class="vocab-card">
             <div class="vocab-term">
               <span>{item.term}</span>
@@ -396,6 +405,23 @@
               Capítulo {item.chapterNumber}: {item.chapterTitle}
             </p>
             <p class="vocab-context">{summarySnippet(item.summary)}</p>
+            {#if showVocabTranslations.includes(index)}
+              <p class="vocab-context translation-line">
+                {summarySnippet(item.summaryTranslation || "Traducción pendiente.")}
+              </p>
+            {/if}
+            <div class="text-actions">
+              <button
+                class:active-toggle={showVocabTranslations.includes(index)}
+                class="ghost toggle-translation"
+                on:click={() => toggleVocabTranslations(index)}
+                aria-pressed={showVocabTranslations.includes(index)}
+              >
+                {showVocabTranslations.includes(index)
+                  ? "Ocultar traducción"
+                  : "Mostrar traducción"}
+              </button>
+            </div>
           </article>
         {/each}
       </div>
