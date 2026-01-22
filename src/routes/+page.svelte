@@ -1,144 +1,133 @@
 <script>
-  import { onMount } from 'svelte';
-  import { languageCatalog } from '$lib/chapters';
+  import { onMount } from "svelte"
+  import { languageCatalog } from "$lib/chapters"
 
-  let view = 'chapters';
-  let language = 'catalan';
-  let completed = [];
-  let openChapters = [];
-  let showTranslations = [];
-  let voices = [];
-  let speechReady = false;
+  let view = "chapters"
+  let language = "catalan"
+  let completed = []
+  let openChapters = []
+  let showTranslations = []
+  let voices = []
+  let speechReady = false
 
-  $: languageData = languageCatalog[language];
+  $: languageData = languageCatalog[language]
   $: chapterList =
     languageData?.chapters.map((chapter, index) => ({
       ...chapter,
-      number: index + 1
-    })) ?? [];
+      number: index + 1,
+    })) ?? []
   $: vocabulary = chapterList.flatMap((chapter) =>
     chapter.vocab.map((item) => ({
       ...item,
       chapterId: chapter.id,
       chapterTitle: chapter.title,
       chapterNumber: chapter.number,
-      summary: chapter.summary
+      summary: chapter.summary,
     }))
-  );
-  $: verbs = languageData?.verbs ?? [];
+  )
+  $: verbs = languageData?.verbs ?? []
+  $: texts = languageData?.texts ?? []
 
   onMount(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return
 
-    speechReady = 'speechSynthesis' in window;
-    language = loadStoredList('selectedLanguage') || 'catalan';
-    completed = loadStoredList(`completedChapters-${language}`);
-    openChapters = loadStoredList(`openChapters-${language}`);
+    speechReady = "speechSynthesis" in window
+    language = loadStoredList("selectedLanguage") || "catalan"
+    completed = loadStoredList(`completedChapters-${language}`)
+    openChapters = loadStoredList(`openChapters-${language}`)
 
     if (speechReady) {
-      loadVoices();
-      window.speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices()
+      window.speechSynthesis.onvoiceschanged = loadVoices
     }
-  });
+  })
 
   const loadStoredList = (key) => {
-    if (typeof localStorage === 'undefined') return [];
+    if (typeof localStorage === "undefined") return []
     try {
-      const raw = localStorage.getItem(key);
-      return raw ? JSON.parse(raw) : [];
+      const raw = localStorage.getItem(key)
+      return raw ? JSON.parse(raw) : []
     } catch {
-      return [];
+      return []
     }
-  };
+  }
 
   const persistList = (key, value) => {
-    if (typeof localStorage === 'undefined') return;
-    localStorage.setItem(key, JSON.stringify(value));
-  };
+    if (typeof localStorage === "undefined") return
+    localStorage.setItem(key, JSON.stringify(value))
+  }
 
   const loadVoices = () => {
-    voices = window.speechSynthesis.getVoices();
-  };
+    voices = window.speechSynthesis.getVoices()
+  }
 
-  const normalizeLang = (lang) => (lang || '').toLowerCase();
+  const normalizeLang = (lang) => (lang || "").toLowerCase()
 
   const pickVoice = (targetLang) => {
-    if (!voices.length) return null;
-    const normalized = normalizeLang(targetLang);
-    const base = normalized.split('-')[0];
+    if (!voices.length) return null
+    const normalized = normalizeLang(targetLang)
+    const base = normalized.split("-")[0]
     return (
       voices.find((voice) => normalizeLang(voice.lang) === normalized) ||
-      voices.find((voice) => normalizeLang(voice.lang).startsWith(`${base}-`)) ||
+      voices.find((voice) =>
+        normalizeLang(voice.lang).startsWith(`${base}-`)
+      ) ||
       voices.find((voice) => normalizeLang(voice.lang).startsWith(base)) ||
       null
-    );
-  };
+    )
+  }
 
   const speak = (text) => {
-    if (!speechReady || !text) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    const targetLang = languageData?.languageCode || 'ca-ES';
-    utterance.lang = targetLang;
-    const voice = pickVoice(targetLang);
-    if (voice) utterance.voice = voice;
-    window.speechSynthesis.speak(utterance);
-  };
+    if (!speechReady || !text) return
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(text)
+    const targetLang = languageData?.languageCode || "ca-ES"
+    utterance.lang = targetLang
+    const voice = pickVoice(targetLang)
+    if (voice) utterance.voice = voice
+    window.speechSynthesis.speak(utterance)
+  }
 
   const speakChapter = (chapter) => {
-    const fullText = [...chapter.input, chapter.summary].join(' ');
-    speak(fullText);
-  };
+    const fullText = [...chapter.input, chapter.summary].join(" ")
+    speak(fullText)
+  }
 
   const toggleCompleted = (id) => {
     completed = completed.includes(id)
       ? completed.filter((chapterId) => chapterId !== id)
-      : [...completed, id];
-    persistList(`completedChapters-${language}`, completed);
-  };
+      : [...completed, id]
+    persistList(`completedChapters-${language}`, completed)
+  }
 
   const toggleOpen = (id) => {
     openChapters = openChapters.includes(id)
       ? openChapters.filter((chapterId) => chapterId !== id)
-      : [...openChapters, id];
-    persistList(`openChapters-${language}`, openChapters);
-  };
+      : [...openChapters, id]
+    persistList(`openChapters-${language}`, openChapters)
+  }
 
   const toggleTranslations = (id) => {
     showTranslations = showTranslations.includes(id)
       ? showTranslations.filter((chapterId) => chapterId !== id)
-      : [...showTranslations, id];
-  };
+      : [...showTranslations, id]
+  }
 
   const summarySnippet = (text) => {
-    if (!text) return '';
-    const [first] = text.split('. ');
-    return first.endsWith('.') ? first : `${first}.`;
-  };
+    if (!text) return ""
+    const [first] = text.split(". ")
+    return first.endsWith(".") ? first : `${first}.`
+  }
 
   const setLanguage = (next) => {
-    if (language === next) return;
-    language = next;
-    completed = loadStoredList(`completedChapters-${language}`);
-    openChapters = loadStoredList(`openChapters-${language}`);
-    showTranslations = [];
-    persistList('selectedLanguage', language);
-  };
+    if (language === next) return
+    language = next
+    completed = loadStoredList(`completedChapters-${language}`)
+    openChapters = loadStoredList(`openChapters-${language}`)
+    showTranslations = []
+    persistList("selectedLanguage", language)
+  }
 </script>
-
-<svelte:head>
-  <title>Catalán e Italiano Deductivo</title>
-  <meta
-    name="description"
-    content="Aprendizaje deductivo de catalán desde el español con audio y capítulos colapsables."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700;800&family=Work+Sans:wght@300;500;700&display=swap"
-    rel="stylesheet"
-  />
-</svelte:head>
 
 <main>
   <div class="top-bar">
@@ -166,40 +155,50 @@
       <p class="hero-label">Capítulos completados</p>
       <p class="hero-note">
         {speechReady
-          ? 'Audio activo con voz del navegador.'
-          : 'Tu navegador no soporta audio por síntesis.'}
+          ? "Audio activo con voz del navegador."
+          : "Tu navegador no soporta audio por síntesis."}
       </p>
     </div>
   </header>
 
   <nav class="view-toggle" aria-label="Cambiar vista">
     <button
-      class:active={view === 'chapters'}
-      on:click={() => (view = 'chapters')}
-      aria-pressed={view === 'chapters'}
+      class:active={view === "chapters"}
+      on:click={() => (view = "chapters")}
+      aria-pressed={view === "chapters"}
     >
       📖 Capítulos
     </button>
     <button
-      class:active={view === 'vocab'}
-      on:click={() => (view = 'vocab')}
-      aria-pressed={view === 'vocab'}
+      class:active={view === "vocab"}
+      on:click={() => (view = "vocab")}
+      aria-pressed={view === "vocab"}
     >
       📚 Vocabulario
     </button>
     <button
-      class:active={view === 'verbs'}
-      on:click={() => (view = 'verbs')}
-      aria-pressed={view === 'verbs'}
+      class:active={view === "verbs"}
+      on:click={() => (view = "verbs")}
+      aria-pressed={view === "verbs"}
     >
       🧭 Verbos
     </button>
+    <button
+      class:active={view === "texts"}
+      on:click={() => (view = "texts")}
+      aria-pressed={view === "texts"}
+    >
+      🧾 Textos
+    </button>
   </nav>
 
-  {#if view === 'chapters'}
+  {#if view === "chapters"}
     <section class="chapters" aria-label="Lista de capítulos">
       {#each chapterList as chapter}
-        <article class:completed={completed.includes(chapter.id)} class="chapter">
+        <article
+          class:completed={completed.includes(chapter.id)}
+          class="chapter"
+        >
           <div class="chapter-header">
             <button
               class="accordion-toggle"
@@ -237,7 +236,8 @@
                         <span>{line}</span>
                         {#if showTranslations.includes(chapter.id)}
                           <span class="translation-line">
-                            {chapter.translations?.[index] || 'Traducción pendiente.'}
+                            {chapter.translations?.[index] ||
+                              "Traducción pendiente."}
                           </span>
                         {/if}
                       </div>
@@ -252,7 +252,10 @@
                   {/each}
                 </ul>
                 <div class="actions">
-                  <button class="ghost" on:click={() => speak(chapter.input.join(' '))}>
+                  <button
+                    class="ghost"
+                    on:click={() => speak(chapter.input.join(" "))}
+                  >
                     Reproducir todas las frases
                   </button>
                   <button class="ghost" on:click={() => speakChapter(chapter)}>
@@ -265,8 +268,8 @@
                     aria-pressed={showTranslations.includes(chapter.id)}
                   >
                     {showTranslations.includes(chapter.id)
-                      ? 'Ocultar traducción'
-                      : 'Mostrar traducción'}
+                      ? "Ocultar traducción"
+                      : "Mostrar traducción"}
                   </button>
                 </div>
               </div>
@@ -288,7 +291,10 @@
               <div class="section">
                 <h3>Texto resumen integrado</h3>
                 <p class="summary">{chapter.summary}</p>
-                <button class="audio-inline" on:click={() => speak(chapter.summary)}>
+                <button
+                  class="audio-inline"
+                  on:click={() => speak(chapter.summary)}
+                >
                   ▶ Escuchar texto resumen
                 </button>
               </div>
@@ -318,13 +324,13 @@
         </article>
       {/each}
     </section>
-  {:else if view === 'vocab'}
+  {:else if view === "vocab"}
     <section class="vocab-view" aria-label="Vista de vocabulario">
       <div class="vocab-header">
         <h2>Vocabulario global</h2>
         <p>
-          Cada palabra está vinculada a su capítulo y al texto donde aparece, para reforzar el
-          contexto.
+          Cada palabra está vinculada a su capítulo y al texto donde aparece,
+          para reforzar el contexto.
         </p>
       </div>
       <div class="vocab-grid">
@@ -349,7 +355,7 @@
         {/each}
       </div>
     </section>
-  {:else}
+  {:else if view === "verbs"}
     <section class="verbs-view" aria-label="Vista de verbos">
       <div class="vocab-header">
         <h2>Verbos principales</h2>
@@ -381,15 +387,47 @@
         {/each}
       </div>
     </section>
+  {:else}
+    <section class="texts-view" aria-label="Vista de textos">
+      <div class="vocab-header">
+        <h2>Textos por nivel</h2>
+        <p>Lecturas cortas para medir comprensión desde A1 hasta B2.</p>
+      </div>
+      <div class="texts-grid">
+        {#each texts as item}
+          <article class="text-card">
+            <div class="text-card-header">
+              <div>
+                <h3>{item.title}</h3>
+                <span class="level-pill">{item.level}</span>
+              </div>
+              <button
+                class="audio"
+                on:click={() => speak(item.text)}
+                aria-label={`Reproducir: ${item.title}`}
+              >
+                ▶
+              </button>
+            </div>
+            <p class="text-body">{item.text}</p>
+          </article>
+        {/each}
+      </div>
+    </section>
   {/if}
 </main>
 
 <style>
   :global(body) {
     margin: 0;
-    font-family: 'Work Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Work Sans", "Helvetica Neue", sans-serif;
     color: #2e2721;
-    background: radial-gradient(circle at top, #fff7e8 0%, #f1e1c8 45%, #e8d2b0 100%);
+    background: radial-gradient(
+      circle at top,
+      #fff7e8 0%,
+      #f1e1c8 45%,
+      #e8d2b0 100%
+    );
   }
 
   :global(*) {
@@ -435,7 +473,7 @@
   }
 
   .brand {
-    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-family: "Fraunces", "Times New Roman", serif;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -458,7 +496,9 @@
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 6px 14px rgba(70, 50, 20, 0.12);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
   }
 
   .language-switch button.active {
@@ -468,7 +508,7 @@
   }
 
   h1 {
-    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-family: "Fraunces", "Times New Roman", serif;
     font-size: clamp(2rem, 3vw, 3rem);
     margin: 0 0 12px;
   }
@@ -489,7 +529,7 @@
   }
 
   .hero-stat {
-    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-family: "Fraunces", "Times New Roman", serif;
     font-size: 2.4rem;
     margin: 0 0 6px;
   }
@@ -521,7 +561,9 @@
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 6px 14px rgba(70, 50, 20, 0.12);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
   }
 
   .view-toggle button.active {
@@ -575,7 +617,7 @@
   }
 
   .chapter-title {
-    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-family: "Fraunces", "Times New Roman", serif;
     font-size: 1.4rem;
   }
 
@@ -643,7 +685,7 @@
   }
 
   .challenge-list li::before {
-    content: '✦';
+    content: "✦";
     position: absolute;
     left: 0;
     color: #a66c1f;
@@ -719,7 +761,7 @@
 
   .vocab-header h2 {
     margin: 0 0 8px;
-    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-family: "Fraunces", "Times New Roman", serif;
     font-size: 2rem;
   }
 
@@ -745,7 +787,7 @@
 
   .verb-card h3 {
     margin: 0;
-    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-family: "Fraunces", "Times New Roman", serif;
     font-size: 1.4rem;
   }
 
@@ -785,6 +827,57 @@
 
   .verb-tense .form {
     font-weight: 700;
+    color: #2f2416;
+  }
+
+  .texts-view {
+    display: grid;
+    gap: 24px;
+  }
+
+  .texts-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .text-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 12px 24px rgba(82, 57, 20, 0.12);
+    display: grid;
+    gap: 12px;
+  }
+
+  .text-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .text-card h3 {
+    margin: 0 0 6px;
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.3rem;
+  }
+
+  .level-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #2f2416;
+    color: #f8e7c6;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+
+  .text-body {
+    margin: 0;
+    line-height: 1.6;
     color: #2f2416;
   }
 

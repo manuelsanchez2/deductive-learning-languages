@@ -76,6 +76,28 @@ export const languageCatalog = {
         ]
       }
     ],
+    texts: [
+      {
+        title: 'Una rutina amb detalls',
+        level: 'A1',
+        text: 'Em llevo a les set, esmorzo ràpid i després treballo des de casa.'
+      },
+      {
+        title: 'Dues opcions',
+        level: 'A2',
+        text: 'Normalment vaig a l’oficina, però avui treballo a casa perquè plou.'
+      },
+      {
+        title: 'Un record curt',
+        level: 'B1',
+        text: 'Quan era petit, passava els estius al poble, i encara en tinc molts records.'
+      },
+      {
+        title: 'Una decisió raonada',
+        level: 'B2',
+        text: 'Tot i que tenia poc temps, vaig acceptar el projecte perquè em permetia aprendre més.'
+      }
+    ],
     chapters: [
       {
         id: 'cap-1',
@@ -452,6 +474,89 @@ export const languageCatalog = {
           { term: 'set', translation: 'sed' },
           { term: 'amb llet', translation: 'con leche' }
         ]
+      },
+      {
+        id: 'cap-17',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Pronombres relatius',
+        input: [
+          'El llibre que vaig comprar és nou.',
+          'La noia amb qui vaig parlar és periodista.'
+        ],
+        translations: [
+          'El libro que compré es nuevo.',
+          'La chica con quien hablé es periodista.'
+        ],
+        challenges: [
+          '¿Qué función cumple \"que\" en la primera frase?',
+          '¿Qué aporta \"amb qui\" frente a una simple coordinación?',
+          '¿Cómo se evita repetir el sustantivo?'
+        ],
+        explanation:
+          'Els relatius connecten oracions i eviten repeticions.\n\n' +
+          'que és general; qui s’usa amb persones després de preposició.',
+        summary:
+          'Vaig parlar amb una noia que treballa a la ràdio i em va recomanar un llibre.',
+        vocab: [
+          { term: 'relatiu', translation: 'relativo' },
+          { term: 'qui', translation: 'quien' },
+          { term: 'ràdio', translation: 'radio' }
+        ]
+      },
+      {
+        id: 'cap-18',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Subjuntiu en recomanacions',
+        input: [
+          'Et recomano que descansis.',
+          'És millor que hi vagis aviat.'
+        ],
+        translations: [
+          'Te recomiendo que descanses.',
+          'Es mejor que vayas pronto.'
+        ],
+        challenges: [
+          '¿Qué verbo activa el subjuntivo?',
+          '¿Qué matiz de recomendación aparece?',
+          '¿Qué cambia si usas indicativo?'
+        ],
+        explanation:
+          'Després de recomanar o valorar, el subjuntiu és habitual.\n\n' +
+          'Expressa desig, suggeriment o valoració.',
+        summary:
+          'Et recomano que descansis una mica i que demà hi vagis amb més calma.',
+        vocab: [
+          { term: 'recomanar', translation: 'recomendar' },
+          { term: 'millor', translation: 'mejor' },
+          { term: 'aviat', translation: 'pronto' }
+        ]
+      },
+      {
+        id: 'cap-19',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Perífrasis d’obligació',
+        input: [
+          'He de sortir ara.',
+          'No cal que vinguis avui.'
+        ],
+        translations: [
+          'Tengo que salir ahora.',
+          'No hace falta que vengas hoy.'
+        ],
+        challenges: [
+          '¿Qué diferencia hay entre obligació i necessitat?',
+          '¿Cómo se suaviza la orden en la segunda frase?',
+          '¿Qué equivalente usarías en español?'
+        ],
+        explanation:
+          'haver de indica obligació; no cal que indica falta de necessitat.\n\n' +
+          'Són molt freqüents en llengua parlada.',
+        summary:
+          'He de sortir ara, però no cal que vinguis fins més tard.',
+        vocab: [
+          { term: 'haver de', translation: 'tener que' },
+          { term: 'fins més tard', translation: 'hasta más tarde' }
+        ]
       }
     ]
   },
@@ -530,6 +635,28 @@ export const languageCatalog = {
             ]
           }
         ]
+      }
+    ],
+    texts: [
+      {
+        title: 'Routine semplice',
+        level: 'A1',
+        text: 'Mi sveglio presto, faccio colazione e poi lavoro da casa.'
+      },
+      {
+        title: 'Un imprevisto',
+        level: 'A2',
+        text: 'Di solito vado in ufficio, ma oggi resto a casa perché piove.'
+      },
+      {
+        title: 'Un ricordo',
+        level: 'B1',
+        text: 'Quando ero piccolo, passavo l’estate al mare e mi ricordo ogni dettaglio.'
+      },
+      {
+        title: 'Una scelta',
+        level: 'B2',
+        text: 'Nonostante avessi poco tempo, ho accettato il progetto perché volevo imparare di più.'
       }
     ],
     chapters: [
@@ -868,6 +995,90 @@ export const languageCatalog = {
           { term: 'per favore', translation: 'por favor' },
           { term: 'aiutarmi', translation: 'ayudarme' }
         ]
+      },
+      {
+        id: 'it-cap-15',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Pronomi relativi',
+        input: [
+          'Il libro che ho comprato è nuovo.',
+          'La persona con cui ho parlato è gentile.'
+        ],
+        translations: [
+          'El libro que compré es nuevo.',
+          'La persona con quien hablé es amable.'
+        ],
+        challenges: [
+          '¿Qué función cumple \"che\" en la frase?',
+          '¿Qué aporta \"con cui\" frente a repetir el sustantivo?',
+          '¿Cómo se organizan dos oraciones en una?'
+        ],
+        explanation:
+          'I pronomi relativi collegano due frasi e evitano ripetizioni.\n\n' +
+          'che es general; cui se usa tras preposición.',
+        summary:
+          'Ho parlato con una persona che lavora alla radio e mi ha consigliato un libro.',
+        vocab: [
+          { term: 'relativo', translation: 'relativo' },
+          { term: 'cui', translation: 'quien/cual' },
+          { term: 'consigliare', translation: 'recomendar' }
+        ]
+      },
+      {
+        id: 'it-cap-16',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Congiuntivo dopo opinione',
+        input: [
+          'Penso che tu abbia ragione.',
+          'È meglio che tu venga presto.'
+        ],
+        translations: [
+          'Pienso que tienes razón.',
+          'Es mejor que vengas pronto.'
+        ],
+        challenges: [
+          '¿Qué desencadena el congiuntivo?',
+          '¿Qué matiz aporta \"è meglio che\"?',
+          '¿Cómo se compara con el indicativo?'
+        ],
+        explanation:
+          'Tras opinión o valoración, el congiuntivo es frecuente.\n\n' +
+          'Expresa duda, valoración o deseo.',
+        summary:
+          'Penso che tu abbia ragione e che venga presto per parlarne con calma.',
+        vocab: [
+          { term: 'abbia', translation: 'tenga (subj.)' },
+          { term: 'meglio', translation: 'mejor' },
+          { term: 'presto', translation: 'pronto' }
+        ]
+      },
+      {
+        id: 'it-cap-17',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Perifrasi di obbligo',
+        input: [
+          'Devo uscire ora.',
+          'Non serve che tu venga oggi.'
+        ],
+        translations: [
+          'Tengo que salir ahora.',
+          'No hace falta que vengas hoy.'
+        ],
+        challenges: [
+          '¿Qué diferencia hay entre obligación y necesidad?',
+          '¿Cómo se suaviza la orden?',
+          '¿Qué equivalente usarías en español?'
+        ],
+        explanation:
+          'devo indica obligazione; non serve che indica falta de necesidad.\n\n' +
+          'Ambas son formas frecuentes en conversación.',
+        summary:
+          'Devo uscire ora, ma non serve che tu venga fino a più tardi.',
+        vocab: [
+          { term: 'devo', translation: 'debo' },
+          { term: 'non serve', translation: 'no hace falta' },
+          { term: 'più tardi', translation: 'más tarde' }
+        ]
       }
     ]
   },
@@ -946,6 +1157,28 @@ export const languageCatalog = {
             ]
           }
         ]
+      }
+    ],
+    texts: [
+      {
+        title: 'Rutina simple',
+        level: 'A1',
+        text: 'Я встаю рано, завтракаю и потом работаю.'
+      },
+      {
+        title: 'Un cambio de plan',
+        level: 'A2',
+        text: 'Обычно я хожу в офис, но сегодня работаю дома, потому что идёт дождь.'
+      },
+      {
+        title: 'Un recuerdo',
+        level: 'B1',
+        text: 'Когда я был маленьким, я часто ездил к бабушке и хорошо это помню.'
+      },
+      {
+        title: 'Una decisión',
+        level: 'B2',
+        text: 'Хотя у меня было мало времени, я принял проект, потому что хотел учиться.'
       }
     ],
     chapters: [
@@ -1250,6 +1483,90 @@ export const languageCatalog = {
           { term: 'два', translation: 'dos' },
           { term: 'три', translation: 'tres' },
           { term: 'билет', translation: 'entrada/billete' }
+        ]
+      },
+      {
+        id: 'ru-cap-15',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Relativos con который',
+        input: [
+          'Это книга, которую я купил.',
+          'Это девушка, с которой я говорил.'
+        ],
+        translations: [
+          'Este es el libro que compré.',
+          'Esta es la chica con la que hablé.'
+        ],
+        challenges: [
+          '¿Qué forma de \"который\" aparece aquí?',
+          '¿Cómo se marca la preposición en relativo?',
+          '¿Cómo evitar repetir el sustantivo?'
+        ],
+        explanation:
+          'который funciona como relativo y se declina por caso.\n\n' +
+          'Con preposición: с которой, у которого, etc.',
+        summary:
+          'Это книга, которую я купил вчера, и девушка, с которой я говорил.',
+        vocab: [
+          { term: 'который', translation: 'que/el cual' },
+          { term: 'с которой', translation: 'con la que' },
+          { term: 'вчера', translation: 'ayer' }
+        ]
+      },
+      {
+        id: 'ru-cap-16',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Condicional con бы',
+        input: [
+          'Я бы поехал, но не могу.',
+          'Если бы было время, я бы пришёл.'
+        ],
+        translations: [
+          'Iría, pero no puedo.',
+          'Si hubiera tiempo, vendría.'
+        ],
+        challenges: [
+          '¿Qué partícula forma el condicional?',
+          '¿Cómo se combina con el pasado?',
+          '¿Qué diferencia hay con un futuro real?'
+        ],
+        explanation:
+          'El condicional se forma con бы + pasado.\n\n' +
+          'Expresa posibilidad o hipótesis.',
+        summary:
+          'Я бы пришёл, если бы было время, но сегодня не могу.',
+        vocab: [
+          { term: 'бы', translation: 'partícula condicional' },
+          { term: 'пришёл', translation: 'vendría (masc.)' },
+          { term: 'если бы', translation: 'si (hipotético)' }
+        ]
+      },
+      {
+        id: 'ru-cap-17',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Aspecto en planes',
+        input: [
+          'Я хочу прочитать эту книгу.',
+          'Я буду читать вечером.'
+        ],
+        translations: [
+          'Quiero leer este libro (terminarlo).',
+          'Voy a leer por la tarde (proceso).'
+        ],
+        challenges: [
+          '¿Qué aspecto expresa intención de terminar?',
+          '¿Qué aspecto describe una actividad en curso?',
+          '¿Cómo se elige según el objetivo?'
+        ],
+        explanation:
+          'El perfectivo marca resultado: прочитать.\n\n' +
+          'El imperfectivo marca proceso: читать.',
+        summary:
+          'Сегодня я хочу прочитать главу, а вечером буду читать ещё немного.',
+        vocab: [
+          { term: 'прочитать', translation: 'leer (terminar)' },
+          { term: 'читать', translation: 'leer (proceso)' },
+          { term: 'глава', translation: 'capítulo' }
         ]
       }
     ]
