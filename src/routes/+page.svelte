@@ -59,12 +59,17 @@
     voices = window.speechSynthesis.getVoices();
   };
 
-  const pickVoice = () => {
+  const normalizeLang = (lang) => (lang || '').toLowerCase();
+
+  const pickVoice = (targetLang) => {
     if (!voices.length) return null;
+    const normalized = normalizeLang(targetLang);
+    const base = normalized.split('-')[0];
     return (
-      voices.find((voice) => voice.lang?.toLowerCase().startsWith('ca')) ||
-      voices.find((voice) => voice.lang?.toLowerCase().startsWith('es')) ||
-      voices[0]
+      voices.find((voice) => normalizeLang(voice.lang) === normalized) ||
+      voices.find((voice) => normalizeLang(voice.lang).startsWith(`${base}-`)) ||
+      voices.find((voice) => normalizeLang(voice.lang).startsWith(base)) ||
+      null
     );
   };
 
@@ -72,8 +77,9 @@
     if (!speechReady || !text) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = languageData?.languageCode || 'ca-ES';
-    const voice = pickVoice();
+    const targetLang = languageData?.languageCode || 'ca-ES';
+    utterance.lang = targetLang;
+    const voice = pickVoice(targetLang);
     if (voice) utterance.voice = voice;
     window.speechSynthesis.speak(utterance);
   };

@@ -501,10 +501,236 @@ export const languageCatalog = {
           { term: 'dolci', translation: 'dulces' },
           { term: 'cucinare', translation: 'cocinar' }
         ]
+      },
+      {
+        id: 'it-cap-5',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Imperfetto vs passato prossimo',
+        input: ['Da piccolo studiavo musica.', 'Ieri ho studiato tutto il giorno.'],
+        translations: ['De pequeño estudiaba música.', 'Ayer estudié todo el día.'],
+        challenges: [
+          '¿Qué diferencia temporal sugiere \"studiavo\" frente a \"ho studiato\"?',
+          '¿Cuándo usarías el imperfecto en una narración?',
+          '¿Cómo separar hábito pasado y evento puntual?'
+        ],
+        explanation:
+          'L’imperfetto expresa hábitos o descripciones en el pasado.\n\n' +
+          'El passato prossimo expresa un evento puntual o concluido.',
+        summary:
+          'Da piccolo studiavo musica, ma ieri ho studiato per l’esame tutto il giorno.',
+        vocab: [
+          { term: 'da piccolo', translation: 'de pequeño' },
+          { term: 'studiavo', translation: 'estudiaba' },
+          { term: 'ho studiato', translation: 'he estudiado' },
+          { term: 'esame', translation: 'examen' }
+        ]
+      },
+      {
+        id: 'it-cap-6',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Stare + gerundio',
+        input: ['Sto leggendo adesso.', 'Stiamo lavorando insieme.'],
+        translations: ['Estoy leyendo ahora.', 'Estamos trabajando juntos.'],
+        challenges: [
+          '¿Qué forma progresiva se usa en italiano?',
+          '¿Qué diferencia hay con el presente simple?',
+          '¿En qué contextos suena más natural?'
+        ],
+        explanation:
+          'stare + gerundio expresa una acción en curso.\n\n' +
+          'Se usa para enfatizar progresión: sto leggendo.',
+        summary:
+          'Adesso sto leggendo un libro, e stiamo lavorando insieme al progetto.',
+        vocab: [
+          { term: 'sto leggendo', translation: 'estoy leyendo' },
+          { term: 'adesso', translation: 'ahora' },
+          { term: 'insieme', translation: 'juntos' },
+          { term: 'progetto', translation: 'proyecto' }
+        ]
+      },
+      {
+        id: 'it-cap-7',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Futuro semplice e intenzione',
+        input: ['Domani partirò.', 'Voglio viaggiare presto.'],
+        translations: ['Mañana partiré.', 'Quiero viajar pronto.'],
+        challenges: [
+          '¿Qué forma marca el futuro en italiano?',
+          '¿Cómo expresar intención sin futuro?',
+          '¿Qué diferencia hay entre plan y deseo?'
+        ],
+        explanation:
+          'El futuro simple marca acciones futuras: partirò.\n\n' +
+          'La intención se puede expresar con voglio + infinitivo.',
+        summary:
+          'Domani partirò per Roma. Voglio viaggiare con calma.',
+        vocab: [
+          { term: 'partire', translation: 'partir' },
+          { term: 'presto', translation: 'pronto' },
+          { term: 'con calma', translation: 'con calma' },
+          { term: 'Roma', translation: 'Roma' }
+        ]
+      },
+      {
+        id: 'it-cap-8',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Verbos modales: potere, dovere, volere',
+        input: ['Posso entrare?', 'Devo studiare oggi.', 'Voglio un caffè.'],
+        translations: ['¿Puedo entrar?', 'Debo estudiar hoy.', 'Quiero un café.'],
+        challenges: [
+          '¿Qué matiz aporta cada modal?',
+          '¿Cómo se combina el modal con el infinitivo?',
+          '¿Qué diferencia notas con el español?'
+        ],
+        explanation:
+          'Los modales van seguidos de infinitivo: posso entrare.\n\n' +
+          'potere = posibilidad, dovere = obligación, volere = deseo.',
+        summary:
+          'Oggi devo studiare, ma voglio un caffè. Dopo posso uscire.',
+        vocab: [
+          { term: 'posso', translation: 'puedo' },
+          { term: 'devo', translation: 'debo' },
+          { term: 'voglio', translation: 'quiero' },
+          { term: 'uscire', translation: 'salir' }
+        ]
+      },
+      {
+        id: 'it-cap-9',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Ci / Ne (pronombres)',
+        input: ['Ci vado domani.', 'Ne voglio due.'],
+        translations: ['Voy allí mañana.', 'Quiero dos de ellos.'],
+        challenges: [
+          '¿Qué reemplaza \"ci\" en la frase?',
+          '¿Qué cantidad retoma \"ne\"?',
+          '¿Cómo cambia la posición del pronombre?'
+        ],
+        explanation:
+          'ci puede indicar lugar o complemento introducido por a.\n\n' +
+          'ne retoma cantidad o \"de + sustantivo\".',
+        summary:
+          'Ci vado domani e ne voglio due, per favore.',
+        vocab: [
+          { term: 'ci', translation: 'allí / a ello' },
+          { term: 'ne', translation: 'de ello / de ellos' },
+          { term: 'due', translation: 'dos' },
+          { term: 'per favore', translation: 'por favor' }
+        ]
+      },
+      {
+        id: 'it-cap-10',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Doble negación',
+        input: ['Non vedo nessuno.', 'Non ho mai tempo.'],
+        translations: ['No veo a nadie.', 'No tengo nunca tiempo.'],
+        challenges: [
+          '¿Qué elementos negativos aparecen?',
+          '¿Por qué hay dos marcas de negación?',
+          '¿Cómo se refleja en español?'
+        ],
+        explanation:
+          'La doble negación es normal: non + nessuno/mai.\n\n' +
+          'Refuerza la negación sin cambiar el sentido.',
+        summary:
+          'Non vedo nessuno oggi e non ho mai tempo libero.',
+        vocab: [
+          { term: 'nessuno', translation: 'nadie' },
+          { term: 'mai', translation: 'nunca' },
+          { term: 'tempo libero', translation: 'tiempo libre' }
+        ]
+      },
+      {
+        id: 'it-cap-11',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Preguntar y responder',
+        input: ['Dove vivi?', 'Che cosa fai?'],
+        translations: ['¿Dónde vives?', '¿Qué haces?'],
+        challenges: [
+          '¿Qué interrogativos se usan en italiano?',
+          '¿Cómo cambia la entonación en preguntas?',
+          '¿Qué respuestas naturales darías?'
+        ],
+        explanation:
+          'Preguntas directas con dove / che cosa.\n\n' +
+          'La estructura suele ser simple y directa.',
+        summary:
+          'Vivo vicino al centro. Lavoro da casa e studio italiano.',
+        vocab: [
+          { term: 'dove', translation: 'dónde' },
+          { term: 'che cosa', translation: 'qué' },
+          { term: 'lavoro', translation: 'trabajo' },
+          { term: 'studio', translation: 'estudio' }
+        ]
+      },
+      {
+        id: 'it-cap-12',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Ritmo diario',
+        input: ['Mi sveglio alle sette.', 'Lavoro tutto il giorno.'],
+        translations: ['Me despierto a las siete.', 'Trabajo todo el día.'],
+        challenges: [
+          '¿Qué reflexivo aparece en \"mi sveglio\"?',
+          '¿Cómo se expresa la hora en italiano?',
+          '¿Qué aporta \"tutto il giorno\"?'
+        ],
+        explanation:
+          'Los reflexivos van con pronombre: mi sveglio.\n\n' +
+          'La hora se expresa con \"alle\" + número.',
+        summary:
+          'Mi sveglio presto, lavoro tutto il giorno e la sera riposo.',
+        vocab: [
+          { term: 'mi sveglio', translation: 'me despierto' },
+          { term: 'presto', translation: 'temprano' },
+          { term: 'sera', translation: 'tarde-noche' },
+          { term: 'riposo', translation: 'descanso' }
+        ]
+      },
+      {
+        id: 'it-cap-13',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Conectores básicos',
+        input: ['Anche se piove, usciamo.', 'Invece restiamo a casa.'],
+        translations: ['Aunque llueve, salimos.', 'En cambio nos quedamos en casa.'],
+        challenges: [
+          '¿Qué matiz aporta \"anche se\"?',
+          '¿Cómo se contrasta con \"invece\"?',
+          '¿En qué registros suenan naturales?'
+        ],
+        explanation:
+          'anche se introduce una concesión.\n\n' +
+          'invece marca contraste o alternativa.',
+        summary:
+          'Anche se piove, usciamo. Invece altri restano a casa.',
+        vocab: [
+          { term: 'anche se', translation: 'aunque' },
+          { term: 'invece', translation: 'en cambio' },
+          { term: 'restare', translation: 'quedarse' }
+        ]
+      },
+      {
+        id: 'it-cap-14',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Cortesía básica',
+        input: ['Vorrei un caffè.', 'Per favore, puoi aiutarmi?'],
+        translations: ['Quisiera un café.', 'Por favor, ¿puedes ayudarme?'],
+        challenges: [
+          '¿Qué valor tiene \"vorrei\"?',
+          '¿Cómo suaviza la petición?',
+          '¿Qué diferencia hay entre \"puoi\" y \"potresti\"?'
+        ],
+        explanation:
+          'vorrei es cortesía equivalente a \"quisiera\".\n\n' +
+          'puoi + infinitivo formula petición directa.',
+        summary:
+          'Vorrei un caffè e, per favore, puoi aiutarmi un momento?',
+        vocab: [
+          { term: 'vorrei', translation: 'quisiera' },
+          { term: 'per favore', translation: 'por favor' },
+          { term: 'aiutarmi', translation: 'ayudarme' }
+        ]
       }
     ]
-  }
-  ,
+  },
   russian: {
     id: 'russian',
     label: 'Ruso',
@@ -598,6 +824,222 @@ export const languageCatalog = {
           { term: 'нравятся', translation: 'gustan (plural)' },
           { term: 'кофе', translation: 'café' },
           { term: 'сладости', translation: 'dulces' }
+        ]
+      },
+      {
+        id: 'ru-cap-5',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Pasado: был / была',
+        input: ['Вчера я был дома.', 'Она была спокойна.'],
+        translations: ['Ayer estuve en casa.', 'Ella estaba tranquila.'],
+        challenges: [
+          '¿Qué forma aparece para pasado de “быть”?',
+          '¿Cómo marca género el pasado en ruso?',
+          '¿En qué se diferencia del presente sin verbo?'
+        ],
+        explanation:
+          'En pasado, “быть” aparece como был/была/было/были.\n\n' +
+          'El pasado marca género y número.',
+        summary: 'Вчера я был дома, а она была спокойна.',
+        vocab: [
+          { term: 'вчера', translation: 'ayer' },
+          { term: 'был', translation: 'estuve (masc.)' },
+          { term: 'была', translation: 'estuvo (fem.)' }
+        ]
+      },
+      {
+        id: 'ru-cap-6',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Aspecto: читать / прочитать',
+        input: ['Я читаю книгу.', 'Я прочитал книгу.'],
+        translations: ['Estoy leyendo un libro.', 'Leí el libro (terminado).'],
+        challenges: [
+          '¿Qué diferencia hay entre proceso y resultado?',
+          '¿Qué prefijo marca completitud?',
+          '¿Cómo se refleja en español?'
+        ],
+        explanation:
+          'El aspecto imperfectivo describe proceso: читать.\n\n' +
+          'El perfectivo marca completitud: прочитать.',
+        summary: 'Сейчас я читаю книгу, а вчера я прочитал другую.',
+        vocab: [
+          { term: 'читать', translation: 'leer (proceso)' },
+          { term: 'прочитать', translation: 'leer (terminado)' },
+          { term: 'книга', translation: 'libro' },
+          { term: 'другую', translation: 'otra' }
+        ]
+      },
+      {
+        id: 'ru-cap-7',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Futuro: буду + infinitivo',
+        input: ['Завтра я буду работать.', 'Мы будем говорить позже.'],
+        translations: ['Mañana trabajaré.', 'Hablaremos más tarde.'],
+        challenges: [
+          '¿Qué verbo auxiliar aparece en el futuro?',
+          '¿Cómo se combina con el infinitivo?',
+          '¿Qué diferencia hay con el futuro perfectivo?'
+        ],
+        explanation:
+          'El futuro imperfectivo se forma con быть + infinitivo.\n\n' +
+          'буду, будешь, будет, будем, будете, будут.',
+        summary: 'Завтра я буду работать, а вечером мы будем говорить.',
+        vocab: [
+          { term: 'буду', translation: 'seré/estaré (futuro)' },
+          { term: 'работать', translation: 'trabajar' },
+          { term: 'позже', translation: 'más tarde' }
+        ]
+      },
+      {
+        id: 'ru-cap-8',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Negación doble',
+        input: ['Я никого не вижу.', 'У меня нет времени.'],
+        translations: ['No veo a nadie.', 'No tengo tiempo.'],
+        challenges: [
+          '¿Qué dos elementos negativos aparecen?',
+          '¿Cómo se distribuye la negación en ruso?',
+          '¿Qué diferencia hay con el español?'
+        ],
+        explanation:
+          'La doble negación es obligatoria: не + никто/ничего.\n\n' +
+          'En posesión negativa: нет + genitivo.',
+        summary: 'Я никого не вижу и у меня нет времени.',
+        vocab: [
+          { term: 'никого', translation: 'a nadie' },
+          { term: 'не', translation: 'no' },
+          { term: 'нет', translation: 'no hay / no tengo' },
+          { term: 'время', translation: 'tiempo' }
+        ]
+      },
+      {
+        id: 'ru-cap-9',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Dirección: в / на + acusativo',
+        input: ['Я иду в магазин.', 'Мы едем на работу.'],
+        translations: ['Voy a la tienda.', 'Vamos al trabajo.'],
+        challenges: [
+          '¿Qué preposición acompaña a lugares cerrados?',
+          '¿Qué preposición va con superficies o destinos habituales?',
+          '¿Qué caso se usa con movimiento?'
+        ],
+        explanation:
+          'Con movimiento hacia destino se usa acusativo.\n\n' +
+          'в para interiores; на para superficies o actividades.',
+        summary: 'Сейчас я иду в магазин, а потом мы едем на работу.',
+        vocab: [
+          { term: 'в', translation: 'a (interior)' },
+          { term: 'на', translation: 'a (superficie/actividad)' },
+          { term: 'магазин', translation: 'tienda' },
+          { term: 'работа', translation: 'trabajo' }
+        ]
+      },
+      {
+        id: 'ru-cap-10',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Rutina diaria',
+        input: ['Я встаю в семь.', 'Я работаю весь день.'],
+        translations: ['Me levanto a las siete.', 'Trabajo todo el día.'],
+        challenges: [
+          '¿Qué verbo expresa levantarse?',
+          '¿Cómo se marca la hora?',
+          '¿Qué significa “весь день”?'
+        ],
+        explanation:
+          'Los verbos reflexivos usan -ся: встаю.\n\n' +
+          'La hora se expresa con “в” + numeral.',
+        summary: 'Я встаю рано, работаю весь день и вечером отдыхаю.',
+        vocab: [
+          { term: 'встаю', translation: 'me levanto' },
+          { term: 'в семь', translation: 'a las siete' },
+          { term: 'вечером', translation: 'por la tarde-noche' },
+          { term: 'отдыхаю', translation: 'descanso' }
+        ]
+      },
+      {
+        id: 'ru-cap-11',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Preguntar y responder',
+        input: ['Где ты живёшь?', 'Что ты делаешь?'],
+        translations: ['¿Dónde vives?', '¿Qué haces?'],
+        challenges: [
+          '¿Qué interrogativos ves en ruso?',
+          '¿Cómo se marca el acento en la pregunta?',
+          '¿Qué respuestas naturales darías?'
+        ],
+        explanation:
+          'Preguntas directas con где / что.\n\n' +
+          'La estructura es simple y el contexto ayuda.',
+        summary: 'Я живу рядом с центром. Я работаю и учу русский.',
+        vocab: [
+          { term: 'где', translation: 'dónde' },
+          { term: 'что', translation: 'qué' },
+          { term: 'живу', translation: 'vivo' },
+          { term: 'учу', translation: 'aprendo/estudio' }
+        ]
+      },
+      {
+        id: 'ru-cap-12',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Cortesía básica',
+        input: ['Можно кофе, пожалуйста?', 'Вы можете помочь мне?'],
+        translations: ['¿Se puede un café, por favor?', '¿Puede ayudarme?'],
+        challenges: [
+          '¿Qué fórmula de cortesía aparece?',
+          '¿Cómo se usa “можно” en peticiones?',
+          '¿Qué diferencia hay entre ты y вы?'
+        ],
+        explanation:
+          'Можно introduce peticiones suaves, equivalente a “se puede”.\n\n' +
+          'Вы es forma de cortesía o plural.',
+        summary: 'Можно кофе, пожалуйста? Вы можете помочь мне на минуту?',
+        vocab: [
+          { term: 'можно', translation: 'se puede / puedo' },
+          { term: 'пожалуйста', translation: 'por favor' },
+          { term: 'помочь', translation: 'ayudar' }
+        ]
+      },
+      {
+        id: 'ru-cap-13',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Conectores básicos',
+        input: ['Хотя идёт дождь, мы идём.', 'А другие остаются дома.'],
+        translations: ['Aunque llueve, vamos.', 'Y otros se quedan en casa.'],
+        challenges: [
+          '¿Qué conector introduce concesión?',
+          '¿Qué función cumple “а”?',
+          '¿Cómo se contrasta en ruso?'
+        ],
+        explanation:
+          'хотя introduce concesión.\n\n' +
+          'а contrasta o introduce alternativa.',
+        summary: 'Хотя идёт дождь, мы идём. А другие остаются дома.',
+        vocab: [
+          { term: 'хотя', translation: 'aunque' },
+          { term: 'идёт дождь', translation: 'llueve' },
+          { term: 'остаются', translation: 'se quedan' }
+        ]
+      },
+      {
+        id: 'ru-cap-14',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Cantidad y números',
+        input: ['Мне нужно два билета.', 'У нас есть три книги.'],
+        translations: ['Necesito dos entradas.', 'Tenemos tres libros.'],
+        challenges: [
+          '¿Qué caso aparece con cantidades?',
+          '¿Cómo se usa “нужно” para necesidad?',
+          '¿Qué diferencia hay entre “у нас есть” y “мы имеем”?'
+        ],
+        explanation:
+          'нужно expresa necesidad impersonal.\n\n' +
+          'La posesión cotidiana usa у нас есть.',
+        summary: 'Мне нужно два билета, и у нас есть три книги.',
+        vocab: [
+          { term: 'нужно', translation: 'necesito / hace falta' },
+          { term: 'два', translation: 'dos' },
+          { term: 'три', translation: 'tres' },
+          { term: 'билет', translation: 'entrada/billete' }
         ]
       }
     ]
