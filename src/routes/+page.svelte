@@ -1,13 +1,21 @@
 <script>
   import { onMount } from 'svelte';
-  import { chapters } from '$lib/chapters';
+  import { languageCatalog } from '$lib/chapters';
 
-  const chapterList = chapters.map((chapter, index) => ({
-    ...chapter,
-    number: index + 1
-  }));
+  let view = 'chapters';
+  let language = 'catalan';
+  let completed = [];
+  let openChapters = [];
+  let voices = [];
+  let speechReady = false;
 
-  const vocabulary = chapterList.flatMap((chapter) =>
+  $: languageData = languageCatalog[language];
+  $: chapterList =
+    languageData?.chapters.map((chapter, index) => ({
+      ...chapter,
+      number: index + 1
+    })) ?? [];
+  $: vocabulary = chapterList.flatMap((chapter) =>
     chapter.vocab.map((item) => ({
       ...item,
       chapterId: chapter.id,
@@ -17,18 +25,13 @@
     }))
   );
 
-  let view = 'chapters';
-  let completed = [];
-  let openChapters = [];
-  let voices = [];
-  let speechReady = false;
-
   onMount(() => {
     if (typeof window === 'undefined') return;
 
     speechReady = 'speechSynthesis' in window;
-    completed = loadStoredList('completedChapters');
-    openChapters = loadStoredList('openChapters');
+    language = loadStoredList('selectedLanguage') || 'catalan';
+    completed = loadStoredList(`completedChapters-${language}`);
+    openChapters = loadStoredList(`openChapters-${language}`);
 
     if (speechReady) {
       loadVoices();
@@ -68,7 +71,7 @@
     if (!speechReady || !text) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ca-ES';
+    utterance.lang = languageData?.languageCode || 'ca-ES';
     const voice = pickVoice();
     if (voice) utterance.voice = voice;
     window.speechSynthesis.speak(utterance);
@@ -83,14 +86,14 @@
     completed = completed.includes(id)
       ? completed.filter((chapterId) => chapterId !== id)
       : [...completed, id];
-    persistList('completedChapters', completed);
+    persistList(`completedChapters-${language}`, completed);
   };
 
   const toggleOpen = (id) => {
     openChapters = openChapters.includes(id)
       ? openChapters.filter((chapterId) => chapterId !== id)
       : [...openChapters, id];
-    persistList('openChapters', openChapters);
+    persistList(`openChapters-${language}`, openChapters);
   };
 
   const summarySnippet = (text) => {
@@ -98,10 +101,18 @@
     const [first] = text.split('. ');
     return first.endsWith('.') ? first : `${first}.`;
   };
+
+  const setLanguage = (next) => {
+    if (language === next) return;
+    language = next;
+    completed = loadStoredList(`completedChapters-${language}`);
+    openChapters = loadStoredList(`openChapters-${language}`);
+    persistList('selectedLanguage', language);
+  };
 </script>
 
 <svelte:head>
-  <title>Catalán Deductivo</title>
+  <title>Catalán e Italiano Deductivo</title>
   <meta
     name="description"
     content="Aprendizaje deductivo de catalán desde el español con audio y capítulos colapsables."
@@ -115,14 +126,25 @@
 </svelte:head>
 
 <main>
+  <div class="top-bar">
+    <span class="brand">Deductivo</span>
+    <div class="language-switch" role="group" aria-label="Cambiar idioma">
+      {#each Object.values(languageCatalog) as lang}
+        <button
+          class:active={language === lang.id}
+          on:click={() => setLanguage(lang.id)}
+          aria-pressed={language === lang.id}
+        >
+          {lang.label}
+        </button>
+      {/each}
+    </div>
+  </div>
   <header class="hero">
     <div>
       <p class="eyebrow">Aprendizaje deductivo</p>
-      <h1>Catalán desde el español, por descubrimiento</h1>
-      <p class="lede">
-        Observa ejemplos reales, formula hipótesis y confirma con explicaciones claras. Marca tu
-        progreso y escucha cada frase con audio integrado.
-      </p>
+      <h1>{languageData?.heroTitle}</h1>
+      <p class="lede">{languageData?.heroDescription}</p>
     </div>
     <div class="hero-card">
       <p class="hero-stat">{completed.length} / {chapterList.length}</p>
@@ -327,6 +349,51 @@
     font-size: 0.75rem;
     color: #a66c1f;
     margin: 0 0 10px;
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 24px rgba(82, 57, 20, 0.12);
+  }
+
+  .brand {
+    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #7b4a15;
+  }
+
+  .language-switch {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .language-switch button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f6efe4;
+    color: #2e2721;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(70, 50, 20, 0.12);
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .language-switch button.active {
+    background: #2f2416;
+    color: #f8e7c6;
+    transform: translateY(-1px);
   }
 
   h1 {
