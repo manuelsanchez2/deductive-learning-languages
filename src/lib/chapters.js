@@ -504,4 +504,102 @@ export const languageCatalog = {
       }
     ]
   }
+  ,
+  russian: {
+    id: 'russian',
+    label: 'Ruso',
+    languageCode: 'ru-RU',
+    heroTitle: 'Ruso desde el español, por descubrimiento',
+    heroDescription:
+      'Observa ejemplos rusos reales, deduce patrones y confirma con explicaciones claras. Audio integrado para ritmo y pronunciación.',
+    chapters: [
+      {
+        id: 'ru-cap-1',
+        block: 'Bloque I — Fundamentos',
+        title: 'Identidad y estado (sin verbo “ser” en presente)',
+        input: ['Я студент.', 'Я дома.', 'Сегодня я спокоен.'],
+        translations: ['Soy estudiante.', 'Estoy en casa.', 'Hoy estoy tranquilo.'],
+        challenges: [
+          '¿Qué notas sobre la ausencia de verbo en presente?',
+          '¿Cómo se interpreta la relación entre sujeto y predicado?',
+          '¿Qué pistas te da el contexto para diferenciar identidad y estado?'
+        ],
+        explanation:
+          'En ruso, el verbo “ser” (быть) suele omitirse en presente: “Я студент”.\n\n' +
+          'La relación se entiende por contexto y orden de palabras.',
+        summary: 'Я студент и живу рядом с центром. Сегодня я дома и спокоен.',
+        vocab: [
+          { term: 'студент', translation: 'estudiante' },
+          { term: 'дома', translation: 'en casa' },
+          { term: 'сегодня', translation: 'hoy' },
+          { term: 'спокоен', translation: 'tranquilo' }
+        ]
+      },
+      {
+        id: 'ru-cap-2',
+        block: 'Bloque I — Fundamentos',
+        title: 'Posesión con “у + genitivo”',
+        input: ['У меня есть книга.', 'У Марка есть дом.'],
+        translations: ['Tengo un libro.', 'Marc tiene una casa.'],
+        challenges: [
+          '¿Qué estructura reemplaza al “tener” español?',
+          '¿Qué significa literalmente “у меня есть”?',
+          '¿Cómo cambia la perspectiva de posesión?'
+        ],
+        explanation:
+          'El ruso usa “у + genitivo + есть” para expresar posesión.\n\n' +
+          'Literalmente: “En mí hay…”, con enfoque en la existencia.',
+        summary: 'У меня есть маленькая квартира, а у Марка есть дом.',
+        vocab: [
+          { term: 'у меня есть', translation: 'tengo' },
+          { term: 'книга', translation: 'libro' },
+          { term: 'дом', translation: 'casa' }
+        ]
+      },
+      {
+        id: 'ru-cap-3',
+        block: 'Bloque I — Fundamentos',
+        title: 'Movimiento básico: идти / ходить',
+        input: ['Я иду домой.', 'Я хожу в кафе часто.'],
+        translations: ['Voy a casa (ahora).', 'Voy al café a menudo (habitualmente).'],
+        challenges: [
+          '¿Qué diferencia hay entre una acción en curso y un hábito?',
+          '¿Cómo se marca la dirección “a casa” en ruso?',
+          '¿Qué verbo usarías para una acción puntual?'
+        ],
+        explanation:
+          'идти expresa movimiento en curso o puntual; ходить expresa hábito o repetición.\n\n' +
+          'La dirección se marca con formas como “домой”.',
+        summary: 'Сейчас я иду домой, но обычно хожу в кафе вечером.',
+        vocab: [
+          { term: 'идти', translation: 'ir (en curso)' },
+          { term: 'ходить', translation: 'ir (habitual)' },
+          { term: 'домой', translation: 'a casa' },
+          { term: 'обычно', translation: 'normalmente' }
+        ]
+      },
+      {
+        id: 'ru-cap-4',
+        block: 'Bloque I — Fundamentos',
+        title: 'Gustar: нравиться',
+        input: ['Мне нравится кофе.', 'Ему нравятся длинные фильмы.'],
+        translations: ['Me gusta el café.', 'A él le gustan las películas largas.'],
+        challenges: [
+          '¿Quién es el sujeto gramatical con “нравиться”?',
+          '¿Qué caso aparece con la persona que siente el gusto?',
+          '¿Cómo cambia el verbo con singular/plural?'
+        ],
+        explanation:
+          'Con “нравиться”, lo que gusta es el sujeto; la persona va en dativo.\n\n' +
+          'нравится con singular, нравятся con plural.',
+        summary: 'Мне нравится кофе, но мне не нравятся сладости.',
+        vocab: [
+          { term: 'нравится', translation: 'gusta (singular)' },
+          { term: 'нравятся', translation: 'gustan (plural)' },
+          { term: 'кофе', translation: 'café' },
+          { term: 'сладости', translation: 'dulces' }
+        ]
+      }
+    ]
+  }
 };
