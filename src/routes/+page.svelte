@@ -687,7 +687,7 @@
     gap: 6px;
     text-align: left;
     cursor: pointer;
-    flex: 1 1 260px;
+    /* flex: 1 1 260px; */
   }
 
   .chapter-index {

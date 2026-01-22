@@ -2614,5 +2614,957 @@ export const languageCatalog = {
         ]
       }
     ]
+  },
+  icelandic: {
+    id: 'icelandic',
+    label: 'Islandés',
+    languageCode: 'is-IS',
+    heroTitle: 'Islandés desde el español, por descubrimiento',
+    heroDescription:
+      'Ejemplos reales en islandés para deducir patrones. Audio integrado y enfoque deductivo.',
+    verbs: [
+      {
+        title: 'Vera (ser/estar)',
+        notes: 'Identidad, estado y localización.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég er' },
+              { label: 'Tú', form: 'þú ert' },
+              { label: 'Él/Ella', form: 'hann/hún er' },
+              { label: 'Nosotros', form: 'við erum' },
+              { label: 'Vosotros', form: 'þið eruð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær eru' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég var' },
+              { label: 'Tú', form: 'þú varst' },
+              { label: 'Él/Ella', form: 'hann/hún var' },
+              { label: 'Nosotros', form: 'við vorum' },
+              { label: 'Vosotros', form: 'þið voruð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær voru' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun vera' },
+              { label: 'Tú', form: 'þú munt vera' },
+              { label: 'Él/Ella', form: 'hann/hún mun vera' },
+              { label: 'Nosotros', form: 'við munum vera' },
+              { label: 'Vosotros', form: 'þið munuð vera' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu vera' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi vera' },
+              { label: 'Tú', form: 'þú myndir vera' },
+              { label: 'Él/Ella', form: 'hann/hún myndi vera' },
+              { label: 'Nosotros', form: 'við myndum vera' },
+              { label: 'Vosotros', form: 'þið mynduð vera' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu vera' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Hafa (tener)',
+        notes: 'Posesión básica.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég hef' },
+              { label: 'Tú', form: 'þú hefur' },
+              { label: 'Él/Ella', form: 'hann/hún hefur' },
+              { label: 'Nosotros', form: 'við höfum' },
+              { label: 'Vosotros', form: 'þið hafið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær hafa' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég hafði' },
+              { label: 'Tú', form: 'þú hafðir' },
+              { label: 'Él/Ella', form: 'hann/hún hafði' },
+              { label: 'Nosotros', form: 'við höfðum' },
+              { label: 'Vosotros', form: 'þið höfðuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær höfðu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun hafa' },
+              { label: 'Tú', form: 'þú munt hafa' },
+              { label: 'Él/Ella', form: 'hann/hún mun hafa' },
+              { label: 'Nosotros', form: 'við munum hafa' },
+              { label: 'Vosotros', form: 'þið munuð hafa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu hafa' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi hafa' },
+              { label: 'Tú', form: 'þú myndir hafa' },
+              { label: 'Él/Ella', form: 'hann/hún myndi hafa' },
+              { label: 'Nosotros', form: 'við myndum hafa' },
+              { label: 'Vosotros', form: 'þið mynduð hafa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu hafa' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Fara (ir)',
+        notes: 'Movimiento.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég fer' },
+              { label: 'Tú', form: 'þú ferð' },
+              { label: 'Él/Ella', form: 'hann/hún fer' },
+              { label: 'Nosotros', form: 'við förum' },
+              { label: 'Vosotros', form: 'þið farið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær fara' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég fór' },
+              { label: 'Tú', form: 'þú fórst' },
+              { label: 'Él/Ella', form: 'hann/hún fór' },
+              { label: 'Nosotros', form: 'við fórum' },
+              { label: 'Vosotros', form: 'þið fóruð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær fóru' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun fara' },
+              { label: 'Tú', form: 'þú munt fara' },
+              { label: 'Él/Ella', form: 'hann/hún mun fara' },
+              { label: 'Nosotros', form: 'við munum fara' },
+              { label: 'Vosotros', form: 'þið munuð fara' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu fara' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi fara' },
+              { label: 'Tú', form: 'þú myndir fara' },
+              { label: 'Él/Ella', form: 'hann/hún myndi fara' },
+              { label: 'Nosotros', form: 'við myndum fara' },
+              { label: 'Vosotros', form: 'þið mynduð fara' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu fara' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Tala (hablar)',
+        notes: 'Verbo regular frecuente.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég tala' },
+              { label: 'Tú', form: 'þú talar' },
+              { label: 'Él/Ella', form: 'hann/hún talar' },
+              { label: 'Nosotros', form: 'við tölum' },
+              { label: 'Vosotros', form: 'þið talið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær tala' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég talaði' },
+              { label: 'Tú', form: 'þú talaðir' },
+              { label: 'Él/Ella', form: 'hann/hún talaði' },
+              { label: 'Nosotros', form: 'við töluðum' },
+              { label: 'Vosotros', form: 'þið töluðuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær töluðu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun tala' },
+              { label: 'Tú', form: 'þú munt tala' },
+              { label: 'Él/Ella', form: 'hann/hún mun tala' },
+              { label: 'Nosotros', form: 'við munum tala' },
+              { label: 'Vosotros', form: 'þið munuð tala' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu tala' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi tala' },
+              { label: 'Tú', form: 'þú myndir tala' },
+              { label: 'Él/Ella', form: 'hann/hún myndi tala' },
+              { label: 'Nosotros', form: 'við myndum tala' },
+              { label: 'Vosotros', form: 'þið mynduð tala' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu tala' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Gera (hacer)',
+        notes: 'Acción general.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég geri' },
+              { label: 'Tú', form: 'þú gerir' },
+              { label: 'Él/Ella', form: 'hann/hún gerir' },
+              { label: 'Nosotros', form: 'við gerum' },
+              { label: 'Vosotros', form: 'þið gerið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær gera' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég gerði' },
+              { label: 'Tú', form: 'þú gerðir' },
+              { label: 'Él/Ella', form: 'hann/hún gerði' },
+              { label: 'Nosotros', form: 'við gerðum' },
+              { label: 'Vosotros', form: 'þið gerðuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær gerðu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun gera' },
+              { label: 'Tú', form: 'þú munt gera' },
+              { label: 'Él/Ella', form: 'hann/hún mun gera' },
+              { label: 'Nosotros', form: 'við munum gera' },
+              { label: 'Vosotros', form: 'þið munuð gera' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu gera' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi gera' },
+              { label: 'Tú', form: 'þú myndir gera' },
+              { label: 'Él/Ella', form: 'hann/hún myndi gera' },
+              { label: 'Nosotros', form: 'við myndum gera' },
+              { label: 'Vosotros', form: 'þið mynduð gera' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu gera' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Koma (venir)',
+        notes: 'Movimiento hacia el hablante.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég kem' },
+              { label: 'Tú', form: 'þú kemur' },
+              { label: 'Él/Ella', form: 'hann/hún kemur' },
+              { label: 'Nosotros', form: 'við komum' },
+              { label: 'Vosotros', form: 'þið komið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær koma' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég kom' },
+              { label: 'Tú', form: 'þú komst' },
+              { label: 'Él/Ella', form: 'hann/hún kom' },
+              { label: 'Nosotros', form: 'við komum' },
+              { label: 'Vosotros', form: 'þið komuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær komu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun koma' },
+              { label: 'Tú', form: 'þú munt koma' },
+              { label: 'Él/Ella', form: 'hann/hún mun koma' },
+              { label: 'Nosotros', form: 'við munum koma' },
+              { label: 'Vosotros', form: 'þið munuð koma' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu koma' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi koma' },
+              { label: 'Tú', form: 'þú myndir koma' },
+              { label: 'Él/Ella', form: 'hann/hún myndi koma' },
+              { label: 'Nosotros', form: 'við myndum koma' },
+              { label: 'Vosotros', form: 'þið mynduð koma' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu koma' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Vinna (trabajar)',
+        notes: 'Actividad laboral.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég vinn' },
+              { label: 'Tú', form: 'þú vinnur' },
+              { label: 'Él/Ella', form: 'hann/hún vinnur' },
+              { label: 'Nosotros', form: 'við vinnum' },
+              { label: 'Vosotros', form: 'þið vinnið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær vinna' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég vann' },
+              { label: 'Tú', form: 'þú vannst' },
+              { label: 'Él/Ella', form: 'hann/hún vann' },
+              { label: 'Nosotros', form: 'við unnum' },
+              { label: 'Vosotros', form: 'þið unnuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær unnu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun vinna' },
+              { label: 'Tú', form: 'þú munt vinna' },
+              { label: 'Él/Ella', form: 'hann/hún mun vinna' },
+              { label: 'Nosotros', form: 'við munum vinna' },
+              { label: 'Vosotros', form: 'þið munuð vinna' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu vinna' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi vinna' },
+              { label: 'Tú', form: 'þú myndir vinna' },
+              { label: 'Él/Ella', form: 'hann/hún myndi vinna' },
+              { label: 'Nosotros', form: 'við myndum vinna' },
+              { label: 'Vosotros', form: 'þið mynduð vinna' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu vinna' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Lesa (leer)',
+        notes: 'Acción de leer.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég les' },
+              { label: 'Tú', form: 'þú lest' },
+              { label: 'Él/Ella', form: 'hann/hún les' },
+              { label: 'Nosotros', form: 'við lesum' },
+              { label: 'Vosotros', form: 'þið lesið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær lesa' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég las' },
+              { label: 'Tú', form: 'þú last' },
+              { label: 'Él/Ella', form: 'hann/hún las' },
+              { label: 'Nosotros', form: 'við lásum' },
+              { label: 'Vosotros', form: 'þið lásuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær lásu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun lesa' },
+              { label: 'Tú', form: 'þú munt lesa' },
+              { label: 'Él/Ella', form: 'hann/hún mun lesa' },
+              { label: 'Nosotros', form: 'við munum lesa' },
+              { label: 'Vosotros', form: 'þið munuð lesa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu lesa' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi lesa' },
+              { label: 'Tú', form: 'þú myndir lesa' },
+              { label: 'Él/Ella', form: 'hann/hún myndi lesa' },
+              { label: 'Nosotros', form: 'við myndum lesa' },
+              { label: 'Vosotros', form: 'þið mynduð lesa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu lesa' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Skrifa (escribir)',
+        notes: 'Acción de escribir.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég skrifa' },
+              { label: 'Tú', form: 'þú skrifar' },
+              { label: 'Él/Ella', form: 'hann/hún skrifar' },
+              { label: 'Nosotros', form: 'við skrifum' },
+              { label: 'Vosotros', form: 'þið skrifið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær skrifa' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég skrifaði' },
+              { label: 'Tú', form: 'þú skrifaðir' },
+              { label: 'Él/Ella', form: 'hann/hún skrifaði' },
+              { label: 'Nosotros', form: 'við skrifuðum' },
+              { label: 'Vosotros', form: 'þið skrifuðuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær skrifuðu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun skrifa' },
+              { label: 'Tú', form: 'þú munt skrifa' },
+              { label: 'Él/Ella', form: 'hann/hún mun skrifa' },
+              { label: 'Nosotros', form: 'við munum skrifa' },
+              { label: 'Vosotros', form: 'þið munuð skrifa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu skrifa' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi skrifa' },
+              { label: 'Tú', form: 'þú myndir skrifa' },
+              { label: 'Él/Ella', form: 'hann/hún myndi skrifa' },
+              { label: 'Nosotros', form: 'við myndum skrifa' },
+              { label: 'Vosotros', form: 'þið mynduð skrifa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu skrifa' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Borða (comer)',
+        notes: 'Necesidades básicas.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég borða' },
+              { label: 'Tú', form: 'þú borðar' },
+              { label: 'Él/Ella', form: 'hann/hún borðar' },
+              { label: 'Nosotros', form: 'við borðum' },
+              { label: 'Vosotros', form: 'þið borðið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær borða' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég borðaði' },
+              { label: 'Tú', form: 'þú borðaðir' },
+              { label: 'Él/Ella', form: 'hann/hún borðaði' },
+              { label: 'Nosotros', form: 'við borðuðum' },
+              { label: 'Vosotros', form: 'þið borðuðuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær borðuðu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun borða' },
+              { label: 'Tú', form: 'þú munt borða' },
+              { label: 'Él/Ella', form: 'hann/hún mun borða' },
+              { label: 'Nosotros', form: 'við munum borða' },
+              { label: 'Vosotros', form: 'þið munuð borða' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu borða' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi borða' },
+              { label: 'Tú', form: 'þú myndir borða' },
+              { label: 'Él/Ella', form: 'hann/hún myndi borða' },
+              { label: 'Nosotros', form: 'við myndum borða' },
+              { label: 'Vosotros', form: 'þið mynduð borða' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu borða' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Drekka (beber)',
+        notes: 'Necesidades básicas.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég drekk' },
+              { label: 'Tú', form: 'þú drekkur' },
+              { label: 'Él/Ella', form: 'hann/hún drekkur' },
+              { label: 'Nosotros', form: 'við drekkum' },
+              { label: 'Vosotros', form: 'þið drekkið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær drekka' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég drakk' },
+              { label: 'Tú', form: 'þú drakkst' },
+              { label: 'Él/Ella', form: 'hann/hún drakk' },
+              { label: 'Nosotros', form: 'við drukkum' },
+              { label: 'Vosotros', form: 'þið drukkuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær drukku' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun drekka' },
+              { label: 'Tú', form: 'þú munt drekka' },
+              { label: 'Él/Ella', form: 'hann/hún mun drekka' },
+              { label: 'Nosotros', form: 'við munum drekka' },
+              { label: 'Vosotros', form: 'þið munuð drekka' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu drekka' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi drekka' },
+              { label: 'Tú', form: 'þú myndir drekka' },
+              { label: 'Él/Ella', form: 'hann/hún myndi drekka' },
+              { label: 'Nosotros', form: 'við myndum drekka' },
+              { label: 'Vosotros', form: 'þið mynduð drekka' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu drekka' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Líka (gustar)',
+        notes: 'Construcción con dativo: “mér líkar”.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'A mí', form: 'mér líkar' },
+              { label: 'A ti', form: 'þér líkar' },
+              { label: 'A él/ella', form: 'honum/henni líkar' },
+              { label: 'A nosotros', form: 'okkur líkar' },
+              { label: 'A vosotros', form: 'ykkur líkar' },
+              { label: 'A ellos', form: 'þeim líkar' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'A mí', form: 'mér líkaði' },
+              { label: 'A ti', form: 'þér líkaði' },
+              { label: 'A él/ella', form: 'honum/henni líkaði' },
+              { label: 'A nosotros', form: 'okkur líkaði' },
+              { label: 'A vosotros', form: 'ykkur líkaði' },
+              { label: 'A ellos', form: 'þeim líkaði' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'A mí', form: 'mér mun líka' },
+              { label: 'A ti', form: 'þér mun líka' },
+              { label: 'A él/ella', form: 'honum/henni mun líka' },
+              { label: 'A nosotros', form: 'okkur mun líka' },
+              { label: 'A vosotros', form: 'ykkur mun líka' },
+              { label: 'A ellos', form: 'þeim mun líka' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'A mí', form: 'mér myndi líka' },
+              { label: 'A ti', form: 'þér myndi líka' },
+              { label: 'A él/ella', form: 'honum/henni myndi líka' },
+              { label: 'A nosotros', form: 'okkur myndi líka' },
+              { label: 'A vosotros', form: 'ykkur myndi líka' },
+              { label: 'A ellos', form: 'þeim myndi líka' }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Búa (vivir)',
+        notes: 'Residencia.',
+        tenses: [
+          {
+            name: 'Presente',
+            persons: [
+              { label: 'Yo', form: 'ég bý' },
+              { label: 'Tú', form: 'þú býrð' },
+              { label: 'Él/Ella', form: 'hann/hún býr' },
+              { label: 'Nosotros', form: 'við búum' },
+              { label: 'Vosotros', form: 'þið búið' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær búa' }
+            ]
+          },
+          {
+            name: 'Pasado',
+            persons: [
+              { label: 'Yo', form: 'ég bjó' },
+              { label: 'Tú', form: 'þú bjóst' },
+              { label: 'Él/Ella', form: 'hann/hún bjó' },
+              { label: 'Nosotros', form: 'við bjuggum' },
+              { label: 'Vosotros', form: 'þið bjuggðuð' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær bjuggu' }
+            ]
+          },
+          {
+            name: 'Futuro',
+            persons: [
+              { label: 'Yo', form: 'ég mun búa' },
+              { label: 'Tú', form: 'þú munt búa' },
+              { label: 'Él/Ella', form: 'hann/hún mun búa' },
+              { label: 'Nosotros', form: 'við munum búa' },
+              { label: 'Vosotros', form: 'þið munuð búa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær munu búa' }
+            ]
+          },
+          {
+            name: 'Condicional',
+            persons: [
+              { label: 'Yo', form: 'ég myndi búa' },
+              { label: 'Tú', form: 'þú myndir búa' },
+              { label: 'Él/Ella', form: 'hann/hún myndi búa' },
+              { label: 'Nosotros', form: 'við myndum búa' },
+              { label: 'Vosotros', form: 'þið mynduð búa' },
+              { label: 'Ellos/Ellas', form: 'þeir/þær myndu búa' }
+            ]
+          }
+        ]
+      }
+    ],
+    texts: [
+      {
+        title: 'Rútína með smáatriðum',
+        level: 'A1',
+        text:
+          'Ég vakna snemma, borða morgunmat og fer svo í vinnu. Á kvöldin les ég smá.',
+        translation:
+          'Me despierto temprano, desayuno y luego voy al trabajo. Por las noches leo un poco.'
+      },
+      {
+        title: 'Breyttur dagur',
+        level: 'A2',
+        text:
+          'Venjulega fer ég á skrifstofuna, en í dag vinn ég heima því það rignir. Eftir hádegi þarf ég að fara í búðina.',
+        translation:
+          'Normalmente voy a la oficina, pero hoy trabajo en casa porque llueve. Después de comer necesito ir a la tienda.'
+      },
+      {
+        title: 'Minning',
+        level: 'B1',
+        text:
+          'Þegar ég var lítill eyddi ég sumrum hjá fjölskyldunni á landsbyggðinni og man þetta enn vel.',
+        translation:
+          'Cuando era pequeño, pasaba los veranos con la familia en el campo y aún lo recuerdo bien.'
+      },
+      {
+        title: 'Ákvörðun',
+        level: 'B2',
+        text:
+          'Þótt ég hefði lítinn tíma þá samþykkti ég verkefnið vegna þess að ég vildi læra meira.',
+        translation:
+          'Aunque tenía poco tiempo, acepté el proyecto porque quería aprender más.'
+      }
+    ],
+    chapters: [
+      {
+        id: 'is-cap-1',
+        block: 'Bloque I — Fundamentos',
+        title: 'Identidad, estado y localización',
+        input: ['Ég er þreyttur.', 'Ég er kennari.', 'Ég er heima.'],
+        translations: ['Estoy cansado.', 'Soy profesor.', 'Estoy en casa.'],
+        challenges: [
+          '¿Qué verbo cubre ser/estar en islandés?',
+          '¿Qué pistas de estado o identidad aparecen?',
+          '¿Cómo cambia el significado con el contexto?'
+        ],
+        explanation:
+          'vera funciona para identidad, estado y localización.\n\n' +
+          'El contexto determina el matiz.',
+        summary:
+          'Ég er kennari og bý nálægt miðbænum. Í dag er ég heima og er rólegur.',
+        vocab: [
+          { term: 'þreyttur', translation: 'cansado' },
+          { term: 'kennari', translation: 'profesor' },
+          { term: 'heima', translation: 'en casa' }
+        ]
+      },
+      {
+        id: 'is-cap-2',
+        block: 'Bloque I — Fundamentos',
+        title: 'Posesión con hafa',
+        input: ['Ég hef bók.', 'Hún hefur hús.'],
+        translations: ['Tengo un libro.', 'Ella tiene una casa.'],
+        challenges: [
+          '¿Qué verbo se usa para “tener”?',
+          '¿Cómo se coloca el sujeto en la frase?',
+          '¿Qué diferencias notas con el español?'
+        ],
+        explanation:
+          'hafa es el verbo básico para posesión.\n\n' +
+          'La estructura es sujeto + verbo + objeto.',
+        summary:
+          'Ég hef litla íbúð og hún hefur stórt hús.',
+        vocab: [
+          { term: 'bók', translation: 'libro' },
+          { term: 'hús', translation: 'casa' },
+          { term: 'íbúð', translation: 'piso' }
+        ]
+      },
+      {
+        id: 'is-cap-3',
+        block: 'Bloque I — Fundamentos',
+        title: 'Gustar: líkar',
+        input: ['Mér líkar kaffi.', 'Henni líkar langar kvikmyndir.'],
+        translations: ['Me gusta el café.', 'A ella le gustan las películas largas.'],
+        challenges: [
+          '¿Qué caso aparece con la persona?',
+          '¿Cómo cambia el verbo con el sujeto?',
+          '¿Qué diferencia hay con el español?'
+        ],
+        explanation:
+          'La persona va en dativo: mér/þér/honum.\n\n' +
+          'El sujeto es lo que gusta.',
+        summary:
+          'Mér líkar sterkt kaffi, en mér líkar ekki sælgæti.',
+        vocab: [
+          { term: 'líkar', translation: 'gusta' },
+          { term: 'kaffi', translation: 'café' },
+          { term: 'kvikmyndir', translation: 'películas' }
+        ]
+      },
+      {
+        id: 'is-cap-4',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Pasado simple',
+        input: ['Í gær fór ég í bíó.', 'Við töluðum lengi.'],
+        translations: ['Ayer fui al cine.', 'Hablamos mucho rato.'],
+        challenges: [
+          '¿Qué forma expresa pasado?',
+          '¿Qué verbo cambia más?'
+        ],
+        explanation:
+          'El pasado se marca con formas específicas: fór, töluðum.\n\n' +
+          'Algunos verbos son irregulares.',
+        summary:
+          'Í gær fór ég í bíó og við töluðum lengi eftir á.',
+        vocab: [
+          { term: 'í gær', translation: 'ayer' },
+          { term: 'fór', translation: 'fui' },
+          { term: 'töluðum', translation: 'hablamos' }
+        ]
+      },
+      {
+        id: 'is-cap-5',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Oraciones relativas',
+        input: ['Bókin sem ég keypti er ný.', 'Konan sem ég talaði við er blaðamaður.'],
+        translations: ['El libro que compré es nuevo.', 'La mujer con la que hablé es periodista.'],
+        challenges: [
+          '¿Qué función cumple “sem”?',
+          '¿Cómo une dos frases?'
+        ],
+        explanation:
+          'sem introduce relativas y conecta oraciones.\n\n' +
+          'Se usa de forma general.',
+        summary:
+          'Ég talaði við konu sem vinnur á útvarpi og hún mælti með bók.',
+        vocab: [
+          { term: 'sem', translation: 'que' },
+          { term: 'blaðamaður', translation: 'periodista' },
+          { term: 'útvarp', translation: 'radio' }
+        ]
+      },
+      {
+        id: 'is-cap-6',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Rutinas diarias',
+        input: ['Ég vakna klukkan sjö.', 'Ég vinn allan daginn.'],
+        translations: ['Me despierto a las siete.', 'Trabajo todo el día.'],
+        challenges: [
+          '¿Cómo se expresa la hora?',
+          '¿Qué palabra indica totalidad?',
+          '¿Cómo se ordena la frase?'
+        ],
+        explanation:
+          'klukkan + número expresa la hora.\n\n' +
+          'allan daginn indica duración total.',
+        summary:
+          'Ég vakna snemma, vinn allan daginn og hvíli mig á kvöldin.',
+        vocab: [
+          { term: 'klukkan', translation: 'a las (hora)' },
+          { term: 'allan daginn', translation: 'todo el día' },
+          { term: 'kvöldin', translation: 'las tardes/noches' }
+        ]
+      },
+      {
+        id: 'is-cap-7',
+        block: 'Bloque III — A1–A2 esenciales',
+        title: 'Preguntar y responder',
+        input: ['Hvar býrð þú?', 'Hvað gerir þú?'],
+        translations: ['¿Dónde vives?', '¿Qué haces?'],
+        challenges: [
+          '¿Qué interrogativos aparecen?',
+          '¿Cómo cambia el orden en preguntas?'
+        ],
+        explanation:
+          'Hvar y hvað son interrogativos básicos.\n\n' +
+          'El verbo suele ir en segunda posición.',
+        summary:
+          'Ég bý nálægt miðbænum. Ég vinn heima og læri íslensku.',
+        vocab: [
+          { term: 'hvar', translation: 'dónde' },
+          { term: 'hvað', translation: 'qué' },
+          { term: 'læri', translation: 'aprendo' }
+        ]
+      },
+      {
+        id: 'is-cap-8',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Futuro con mun',
+        input: ['Ég mun fara á morgun.', 'Við munum tala síðar.'],
+        translations: ['Iré mañana.', 'Hablaremos más tarde.'],
+        challenges: [
+          '¿Qué verbo auxiliar aparece?',
+          '¿Cómo se combina con el infinitivo?'
+        ],
+        explanation:
+          'mun expresa futuro con infinitivo.\n\n' +
+          'Es la forma más común en registro neutro.',
+        summary:
+          'Ég mun fara á morgun og við munum tala síðar í símanum.',
+        vocab: [
+          { term: 'á morgun', translation: 'mañana' },
+          { term: 'síðar', translation: 'más tarde' },
+          { term: 'sími', translation: 'teléfono' }
+        ]
+      },
+      {
+        id: 'is-cap-9',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Condicional con myndi',
+        input: ['Ég myndi fara ef ég hefði tíma.', 'Hún myndi hjálpa.'],
+        translations: ['Iría si tuviera tiempo.', 'Ella ayudaría.'],
+        challenges: [
+          '¿Qué partícula marca el condicional?',
+          '¿Qué relación tiene con la hipótesis?'
+        ],
+        explanation:
+          'myndi + infinitivo expresa condicional.\n\n' +
+          'Se usa para hipótesis o cortesía.',
+        summary:
+          'Ég myndi fara með þér ef ég hefði tíma, en í dag get ég það ekki.',
+        vocab: [
+          { term: 'myndi', translation: 'condicional' },
+          { term: 'ef', translation: 'si' },
+          { term: 'tími', translation: 'tiempo' }
+        ]
+      },
+      {
+        id: 'is-cap-10',
+        block: 'Bloque II — Tiempo y aspecto',
+        title: 'Pasado simple',
+        input: ['Ég las bók í gær.', 'Við skrifuðum bréf.'],
+        translations: ['Leí un libro ayer.', 'Escribimos una carta.'],
+        challenges: [
+          '¿Qué formas de pasado ves?',
+          '¿Qué verbos son irregulares?'
+        ],
+        explanation:
+          'El pasado se expresa con formas específicas: las, skrifuðum.\n\n' +
+          'Muchos verbos cambian la raíz.',
+        summary:
+          'Í gær las ég bók og við skrifuðum bréf til vinar.',
+        vocab: [
+          { term: 'las', translation: 'leí' },
+          { term: 'bréf', translation: 'carta' },
+          { term: 'vinur', translation: 'amigo' }
+        ]
+      },
+      {
+        id: 'is-cap-11',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Conectores básicos',
+        input: ['Þótt það rigndi, fórum við út.', 'En aðrir voru heima.'],
+        translations: ['Aunque llovía, salimos.', 'En cambio otros estaban en casa.'],
+        challenges: [
+          '¿Qué conector introduce concesión?',
+          '¿Cómo se contrasta con “en”?'
+        ],
+        explanation:
+          'þótt introduce concesión.\n\n' +
+          'en marca contraste.',
+        summary:
+          'Þótt það rigndi, fórum við út. En aðrir voru heima og hvíldu sig.',
+        vocab: [
+          { term: 'þótt', translation: 'aunque' },
+          { term: 'en', translation: 'pero/en cambio' },
+          { term: 'hvíla sig', translation: 'descansar' }
+        ]
+      },
+      {
+        id: 'is-cap-12',
+        block: 'Bloque IV — B1 en contexto',
+        title: 'Necesidad y obligación',
+        input: ['Ég þarf að fara núna.', 'Það þarf ekki að koma.'],
+        translations: ['Tengo que irme ahora.', 'No hace falta que vengas.'],
+        challenges: [
+          '¿Qué verbo expresa necesidad?',
+          '¿Cómo se niega la necesidad?'
+        ],
+        explanation:
+          'þurfa + að + infinitivo expresa necesidad.\n\n' +
+          'það þarf ekki indica falta de necesidad.',
+        summary:
+          'Ég þarf að fara núna, en það þarf ekki að koma fyrr en síðar.',
+        vocab: [
+          { term: 'þurfa', translation: 'necesitar/tener que' },
+          { term: 'ekki', translation: 'no' },
+          { term: 'fyrr en síðar', translation: 'hasta más tarde' }
+        ]
+      }
+    ]
   }
 };
