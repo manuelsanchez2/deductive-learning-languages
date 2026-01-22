@@ -905,6 +905,94 @@ export const languageCatalog = {
           { term: 'haver de', translation: 'tener que' },
           { term: 'fins més tard', translation: 'hasta más tarde' }
         ]
+      },
+      {
+        id: 'cap-20',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Indicaciones y ubicación',
+        input: [
+          'On és l’estació?',
+          'Gira a la dreta i segueix recte.',
+          'És al costat del supermercat.'
+        ],
+        translations: [
+          '¿Dónde está la estación?',
+          'Gira a la derecha y sigue recto.',
+          'Está al lado del supermercado.'
+        ],
+        challenges: [
+          '¿Qué verbos se usan para dar instrucciones?',
+          '¿Cómo se expresa ubicación relativa?',
+          '¿Qué palabras marcan dirección?'
+        ],
+        explanation:
+          'Les indicacions es formen amb imperatiu: gira, segueix.\n\n' +
+          'Ubicació: al costat de, davant de, a prop de.',
+        summary:
+          'L’estació és a prop. Gira a l’esquerra i continua fins al pont.',
+        vocab: [
+          { term: 'gira', translation: 'gira' },
+          { term: 'segueix recte', translation: 'sigue recto' },
+          { term: 'al costat de', translation: 'al lado de' }
+        ]
+      },
+      {
+        id: 'cap-21',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Vocabulari d’aeroport',
+        input: [
+          'Tinc una reserva.',
+          'On és la porta d’embarcament?',
+          'El meu vol surt a les nou.'
+        ],
+        translations: [
+          'Tengo una reserva.',
+          '¿Dónde está la puerta de embarque?',
+          'Mi vuelo sale a las nueve.'
+        ],
+        challenges: [
+          '¿Qué palabras clave aparecen en un aeropuerto?',
+          '¿Cómo se expresa la hora de salida?',
+          '¿Qué diferencia hay entre porta i sortida?'
+        ],
+        explanation:
+          'Vocabulari bàsic: vol, porta d’embarcament, equipatge.\n\n' +
+          'surt indica la salida del vuelo.',
+        summary:
+          'El meu vol surt a les nou. Necessito trobar la porta d’embarcament i deixar l’equipatge.',
+        vocab: [
+          { term: 'vol', translation: 'vuelo' },
+          { term: 'porta d’embarcament', translation: 'puerta de embarque' },
+          { term: 'equipatge', translation: 'equipaje' }
+        ]
+      },
+      {
+        id: 'cap-22',
+        block: 'Bloque V — Tiempo verbal',
+        title: 'Temps verbals i imperatiu',
+        input: [
+          'Avui estudio, ahir vaig estudiar, demà estudiaré.',
+          'Escolta bé i no facis soroll.'
+        ],
+        translations: [
+          'Hoy estudio, ayer estudié, mañana estudiaré.',
+          'Escucha bien y no hagas ruido.'
+        ],
+        challenges: [
+          '¿Qué marcas temporales ves?',
+          '¿Cómo se forma el imperativo?',
+          '¿Qué diferencia hay entre temps i aspecte?'
+        ],
+        explanation:
+          'El temps verbal situa l’acció: passat, present o futur.\n\n' +
+          'L’imperatiu dona ordres o instruccions: escolta, no facis.',
+        summary:
+          'Parlem en present, expliquem el passat i planifiquem el futur amb formes diferents.',
+        vocab: [
+          { term: 'passat', translation: 'pasado' },
+          { term: 'futur', translation: 'futuro' },
+          { term: 'imperatiu', translation: 'imperativo' }
+        ]
       }
     ]
   },
@@ -1775,6 +1863,94 @@ export const languageCatalog = {
           { term: 'non serve', translation: 'no hace falta' },
           { term: 'più tardi', translation: 'más tarde' }
         ]
+      },
+      {
+        id: 'it-cap-18',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Indicazioni e luogo',
+        input: [
+          'Dov’è la stazione?',
+          'Gira a destra e vai dritto.',
+          'È accanto al supermercato.'
+        ],
+        translations: [
+          '¿Dónde está la estación?',
+          'Gira a la derecha y ve recto.',
+          'Está al lado del supermercado.'
+        ],
+        challenges: [
+          '¿Qué verbos se usan para dar indicaciones?',
+          '¿Cómo se expresa la ubicación relativa?',
+          '¿Qué palabras marcan dirección?'
+        ],
+        explanation:
+          'Le indicazioni usan el imperativo: gira, vai.\n\n' +
+          'Ubicación: accanto a, davanti a, vicino a.',
+        summary:
+          'La stazione è vicina. Gira a sinistra e continua fino al ponte.',
+        vocab: [
+          { term: 'gira', translation: 'gira' },
+          { term: 'vai dritto', translation: 've recto' },
+          { term: 'accanto a', translation: 'al lado de' }
+        ]
+      },
+      {
+        id: 'it-cap-19',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Vocabolario di aeroporto',
+        input: [
+          'Ho una prenotazione.',
+          'Dov’è il gate?',
+          'Il mio volo parte alle nove.'
+        ],
+        translations: [
+          'Tengo una reserva.',
+          '¿Dónde está la puerta de embarque?',
+          'Mi vuelo sale a las nueve.'
+        ],
+        challenges: [
+          '¿Qué palabras clave aparecen en el aeropuerto?',
+          '¿Cómo se expresa la hora de salida?',
+          '¿Qué diferencia hay entre gate y uscita?'
+        ],
+        explanation:
+          'Vocabolario básico: volo, gate, bagaglio.\n\n' +
+          'parte indica salida del vuelo.',
+        summary:
+          'Il mio volo parte alle nove. Devo trovare il gate e lasciare il bagaglio.',
+        vocab: [
+          { term: 'volo', translation: 'vuelo' },
+          { term: 'gate', translation: 'puerta de embarque' },
+          { term: 'bagaglio', translation: 'equipaje' }
+        ]
+      },
+      {
+        id: 'it-cap-20',
+        block: 'Bloque V — Tiempo verbal',
+        title: 'Tempi verbali e imperativo',
+        input: [
+          'Oggi studio, ieri ho studiato, domani studierò.',
+          'Ascolta bene e non parlare.'
+        ],
+        translations: [
+          'Hoy estudio, ayer estudié, mañana estudiaré.',
+          'Escucha bien y no hables.'
+        ],
+        challenges: [
+          '¿Qué marcas temporales ves?',
+          '¿Cómo se forma el imperativo?',
+          '¿Qué diferencia hay entre tiempo y aspecto?'
+        ],
+        explanation:
+          'Il tempo verbale sitúa la acción en pasado, presente o futuro.\n\n' +
+          'L’imperativo da órdenes: ascolta, non parlare.',
+        summary:
+          'Usiamo tempi diversi per raccontare el pasado y planificar el futuro.',
+        vocab: [
+          { term: 'tempo verbale', translation: 'tiempo verbal' },
+          { term: 'futuro', translation: 'futuro' },
+          { term: 'imperativo', translation: 'imperativo' }
+        ]
       }
     ]
   },
@@ -2611,6 +2787,94 @@ export const languageCatalog = {
           { term: 'прочитать', translation: 'leer (terminar)' },
           { term: 'читать', translation: 'leer (proceso)' },
           { term: 'глава', translation: 'capítulo' }
+        ]
+      },
+      {
+        id: 'ru-cap-18',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Indicaciones y ubicación',
+        input: [
+          'Где находится вокзал?',
+          'Поверните направо и идите прямо.',
+          'Это рядом с супермаркетом.'
+        ],
+        translations: [
+          '¿Dónde está la estación?',
+          'Gire a la derecha y vaya recto.',
+          'Está cerca del supermercado.'
+        ],
+        challenges: [
+          '¿Qué verbos se usan para dar instrucciones?',
+          '¿Cómo se expresa cercanía?',
+          '¿Qué palabras marcan dirección?'
+        ],
+        explanation:
+          'Las indicaciones usan el imperativo: поверните, идите.\n\n' +
+          'Ubicación: рядом с, напротив, слева от.',
+        summary:
+          'Вокзал рядом. Поверните налево и идите до моста.',
+        vocab: [
+          { term: 'поверните', translation: 'gire' },
+          { term: 'идите прямо', translation: 'vaya recto' },
+          { term: 'рядом с', translation: 'cerca de' }
+        ]
+      },
+      {
+        id: 'ru-cap-19',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Vocabulario de aeropuerto',
+        input: [
+          'У меня есть бронирование.',
+          'Где выход на посадку?',
+          'Мой рейс вылетает в девять.'
+        ],
+        translations: [
+          'Tengo una reserva.',
+          '¿Dónde está la puerta de embarque?',
+          'Mi vuelo sale a las nueve.'
+        ],
+        challenges: [
+          '¿Qué palabras clave aparecen en el aeropuerto?',
+          '¿Cómo se expresa la hora de salida?',
+          '¿Qué verbo indica “salir” en vuelos?'
+        ],
+        explanation:
+          'Vocabulario básico: рейс, посадка, багаж.\n\n' +
+          'вылетает indica salida del vuelo.',
+        summary:
+          'Мой рейс вылетает в девять. Мне нужно найти выход на посадку и сдать багаж.',
+        vocab: [
+          { term: 'рейс', translation: 'vuelo' },
+          { term: 'посадка', translation: 'embarque' },
+          { term: 'багаж', translation: 'equipaje' }
+        ]
+      },
+      {
+        id: 'ru-cap-20',
+        block: 'Bloque V — Tiempo verbal',
+        title: 'Tiempo, aspecto e imperativo',
+        input: [
+          'Сегодня я учусь, вчера учился, завтра буду учиться.',
+          'Слушай внимательно и не говори.'
+        ],
+        translations: [
+          'Hoy estudio, ayer estudié, mañana estudiaré.',
+          'Escucha con atención y no hables.'
+        ],
+        challenges: [
+          '¿Qué marca el tiempo y qué marca el aspecto?',
+          '¿Cómo se forma el imperativo?',
+          '¿Qué cambia con perfectivo/imperfectivo?'
+        ],
+        explanation:
+          'El tiempo sitúa la acción; el aspecto marca proceso o resultado.\n\n' +
+          'El imperativo se forma con la raíz: слушай, не говори.',
+        summary:
+          'En ruso, tiempo y aspecto se combinan para dar precisión.',
+        vocab: [
+          { term: 'вчера', translation: 'ayer' },
+          { term: 'завтра', translation: 'mañana' },
+          { term: 'повелительное', translation: 'imperativo' }
         ]
       }
     ]
@@ -3563,6 +3827,94 @@ export const languageCatalog = {
           { term: 'þurfa', translation: 'necesitar/tener que' },
           { term: 'ekki', translation: 'no' },
           { term: 'fyrr en síðar', translation: 'hasta más tarde' }
+        ]
+      },
+      {
+        id: 'is-cap-13',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Leiðbeiningar og staðsetning',
+        input: [
+          'Hvar er lestarstöðin?',
+          'Beygðu til hægri og farðu beint áfram.',
+          'Hún er við hliðina á matvöruverslun.'
+        ],
+        translations: [
+          '¿Dónde está la estación?',
+          'Gira a la derecha y ve recto.',
+          'Está al lado del supermercado.'
+        ],
+        challenges: [
+          '¿Qué verbos se usan para dar indicaciones?',
+          '¿Cómo se expresa ubicación relativa?',
+          '¿Qué palabras marcan dirección?'
+        ],
+        explanation:
+          'Las indicaciones usan el imperativo: beygðu, farðu.\n\n' +
+          'Ubicación: við hliðina á, fyrir framan, nálægt.',
+        summary:
+          'Lestarstöðin er nálægt. Beygðu til vinstri og haltu áfram.',
+        vocab: [
+          { term: 'beygðu', translation: 'gira' },
+          { term: 'beint áfram', translation: 'recto' },
+          { term: 'við hliðina á', translation: 'al lado de' }
+        ]
+      },
+      {
+        id: 'is-cap-14',
+        block: 'Bloque V — Orientación y viajes',
+        title: 'Orðaforði um flugvöll',
+        input: [
+          'Ég er með bókun.',
+          'Hvar er brottfararhlið?',
+          'Flugið mitt fer klukkan níu.'
+        ],
+        translations: [
+          'Tengo una reserva.',
+          '¿Dónde está la puerta de embarque?',
+          'Mi vuelo sale a las nueve.'
+        ],
+        challenges: [
+          '¿Qué palabras clave aparecen en el aeropuerto?',
+          '¿Cómo se expresa la hora de salida?',
+          '¿Qué verbo indica salida del vuelo?'
+        ],
+        explanation:
+          'Vocabulario básico: flug, brottfararhlið, farangur.\n\n' +
+          'fer klukkan indica la hora de salida.',
+        summary:
+          'Flugið mitt fer klukkan níu. Ég þarf að finna brottfararhlið og skila farangri.',
+        vocab: [
+          { term: 'flug', translation: 'vuelo' },
+          { term: 'brottfararhlið', translation: 'puerta de embarque' },
+          { term: 'farangur', translation: 'equipaje' }
+        ]
+      },
+      {
+        id: 'is-cap-15',
+        block: 'Bloque V — Tiempo verbal',
+        title: 'Tími og boðháttur',
+        input: [
+          'Í dag læri ég, í gær lærði ég, á morgun mun ég læra.',
+          'Hlustaðu vel og ekki tala.'
+        ],
+        translations: [
+          'Hoy estudio, ayer estudié, mañana estudiaré.',
+          'Escucha bien y no hables.'
+        ],
+        challenges: [
+          '¿Qué marcas temporales ves?',
+          '¿Cómo se forma el imperativo?',
+          '¿Qué indica el futuro con mun?'
+        ],
+        explanation:
+          'El tiempo verbal sitúa la acción en pasado, presente o futuro.\n\n' +
+          'El imperativo (boðháttur) da instrucciones: hlustaðu, ekki tala.',
+        summary:
+          'Íslenska notar tímamerki og boðhátt til að vera nákvæm.',
+        vocab: [
+          { term: 'tími', translation: 'tiempo' },
+          { term: 'boðháttur', translation: 'imperativo' },
+          { term: 'á morgun', translation: 'mañana' }
         ]
       }
     ]
